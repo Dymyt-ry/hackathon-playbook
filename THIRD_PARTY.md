@@ -23,6 +23,7 @@ and stays under its own license. Nothing below is redistributed from here.
 | `frontend-slides` | [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides) | MIT |
 | `grill-me` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT |
 | `social-content` (upstream name `social`) | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT |
+| `infographic` | [claude-office-skills/skills](https://github.com/claude-office-skills/skills) | MIT |
 
 ## What the installer changes
 

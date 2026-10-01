@@ -7,7 +7,7 @@
 [![CI](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-8b5cf6.svg)](https://agentskills.io)
-[![Skills](https://img.shields.io/badge/skills_routed-40-0ea5e9.svg)](THIRD_PARTY.md)
+[![Skills](https://img.shields.io/badge/skills_routed-41-0ea5e9.svg)](THIRD_PARTY.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-f97316.svg)](#contributing)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-supported-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
@@ -38,7 +38,7 @@ three.
   dashboards and mobile, wired into the build phase.
 - **Pitch deck *and* demo video.** An HTML deck, plus a storyboarded 60–90 s
   demo video recorded and edited in [Recordly](https://github.com/webadderallorg/Recordly).
-- **40 best-in-class skills, one command.** Pulled straight from their authors
+- **41 best-in-class skills, one command.** Pulled straight from their authors
   (Anthropic, Expo, shadcn, Vercel, Emil Kowalski, Paul Bakaus, …) and linked into
   Claude Code, Cursor and Codex.
 
@@ -135,7 +135,8 @@ This playbook is glue; the craft lives in the skills it routes to. Huge thanks t
 [Kaan Kızıltuğ](https://github.com/kaankiziltug/logo-design-skill),
 [Zara Zhang](https://github.com/zarazhangrui/frontend-slides),
 [Matt Pocock](https://github.com/mattpocock/skills),
-[Corey Haines](https://github.com/coreyhaines31/marketingskills) and the
+[Corey Haines](https://github.com/coreyhaines31/marketingskills),
+[Claude Office Skills](https://github.com/claude-office-skills/skills) and the
 [Recordly](https://github.com/webadderallorg/Recordly) team.
 
 ## Contributing

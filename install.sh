@@ -116,6 +116,7 @@ vercel-labs/agent-skills|skills/react-native-skills|vercel-react-native-skills|n
 zarazhangrui/frontend-slides|plugins/frontend-slides/skills/frontend-slides|frontend-slides|none
 mattpocock/skills|skills/productivity/grill-me|grill-me|none
 coreyhaines31/marketingskills|skills/social|social-content|none
+claude-office-skills/skills|infographic|infographic|none
 '
 
 # Names this installer may create links for (hackathon + every manifest entry).

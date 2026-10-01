@@ -141,18 +141,18 @@ Pick the branch that matches what you are building, on top of phase 4:
 
 ## Optional boosters — use when installed
 
-Not installed by this playbook. If one of these exists in your skill list, the
-phase **must** use it in addition to the skills above; if it does not exist,
-carry on without it (that is not a skip).
+If one of these exists in your skill list, the phase **must** use it in addition
+to the skills above; if it does not exist, carry on without it (that is not a
+skip). `infographic` is installed by this playbook; the rest you add yourself.
 
-| Phase | Skill | Adds |
-|---|---|---|
-| 1 Idea check | `research` | deep, cited research in parallel with `last30days` |
-| 1 / 2 | `brainstorm` | non-generic idea and feature variants |
-| 5 Build (dashboard) | `dataviz` | chart colour, mark and KPI-tile rules |
-| 5 Build (landing) | `landing-page-design` | hero / above-the-fold / CTA layout rules |
-| 8 Slides | `pitch-deck-visuals` | slide-by-slide layout and data-slide rules |
-| 8 Slides | `infographic` | one strong data / process slide |
+| Phase | Skill | Adds | Get it |
+|---|---|---|---|
+| 1 Idea check | `research` | deep, cited research in parallel with `last30days` | any deep-research skill you use |
+| 1 / 2 | `brainstorm` | non-generic idea and feature variants (diverge → critique → converge) | [Dymyt-ry/claude-code-toolbelt](https://github.com/Dymyt-ry/claude-code-toolbelt#brainstorm) |
+| 5 Build (dashboard) | `dataviz` | chart colour, mark and KPI-tile rules | built into Claude apps |
+| 5 Build (landing) | `landing-page-design` | hero / above-the-fold / CTA layout rules | [inferen-sh/skills](https://github.com/inferen-sh/skills) |
+| 8 Slides | `pitch-deck-visuals` | slide-by-slide layout and data-slide rules | [inferen-sh/skills](https://github.com/inferen-sh/skills) |
+| 8 Slides | `infographic` | one strong data / process slide | installed — [claude-office-skills/skills](https://github.com/claude-office-skills/skills) |
 
 ## Other useful skills
 
