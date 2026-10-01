@@ -7,7 +7,7 @@ and stays under its own license. Nothing below is redistributed from here.
 | Skills (installed name) | Source | License |
 |---|---|---|
 | `founder-validate-idea`, `founder-mvp-scope`, `founder-pitch-deck`, `founder-competitor-matrix`, `founder-landing-page`, `founder-go-to-market`, `founder-pricing-strategy`, `founder-product-brief`, `founder-persona-gen` | [emotixco/claude-skills-founder](https://github.com/emotixco/claude-skills-founder) | MIT |
-| `pm-prioritize-features`, `pm-brainstorm-ideas-new`, `pm-brainstorm-experiments-new`, `pm-value-proposition`, `pm-lean-canvas`, `pm-startup-canvas`, `pm-ideal-customer-profile`, `pm-beachhead-segment`, `pm-growth-loops`, `pm-market-sizing`, `pm-monetization-strategy`, `pm-business-model` | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | MIT |
+| `pm-prioritize-features`, `pm-brainstorm-ideas-new`, `pm-brainstorm-experiments-new`, `pm-value-proposition`, `pm-lean-canvas`, `pm-startup-canvas`, `pm-ideal-customer-profile`, `pm-beachhead-segment`, `pm-growth-loops`, `pm-market-sizing`, `pm-monetization-strategy`, `pm-business-model`, `pm-product-name`, `pm-positioning-ideas`, `pm-value-prop-statements` | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | MIT |
 | `last30days` | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | MIT |
 | `logo-design` | [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) | MIT (its reference library contains third-party logos, which are trademarks of their owners — see the upstream TRADEMARKS.md) |
 | `frontend-design` | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/frontend-design) | Apache-2.0 (LICENSE.txt in the skill folder) |
@@ -22,7 +22,7 @@ and stays under its own license. Nothing below is redistributed from here.
 | `vercel-react-native-skills` | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | MIT (declared in the skill's frontmatter) |
 | `frontend-slides` | [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides) | MIT |
 | `grill-me` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT |
-| `social-content` (upstream name `social`) | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT |
+| `social-content` (upstream name `social`), `product-marketing`, `copywriting` | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT |
 | `infographic` | [claude-office-skills/skills](https://github.com/claude-office-skills/skills) | MIT |
 
 ## What the installer changes

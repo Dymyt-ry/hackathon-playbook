@@ -7,7 +7,7 @@
 [![CI](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-8b5cf6.svg)](https://agentskills.io)
-[![Skills](https://img.shields.io/badge/skills_routed-45-0ea5e9.svg)](THIRD_PARTY.md)
+[![Skills](https://img.shields.io/badge/skills_routed-50-0ea5e9.svg)](THIRD_PARTY.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-f97316.svg)](#contributing)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-supported-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
@@ -39,12 +39,14 @@ three.
 - **A business, not just a demo.** When judges score market, business model or
   scalability, a dedicated phase sizes the market (TAM/SAM/SOM with sources),
   maps real competitors, prices three tiers and shows how it scales.
+- **A brand, not just a logo.** Name, positioning, tagline and a written voice
+  (`BRAND.md`) that the UI copy, README, pitch and video all follow.
 - **A README that sells to judges.** Badges, a "Ready now / Proof" table where
   every claim links to code or a screenshot, honest limits — the format judges
   can verify in two minutes.
 - **Pitch deck *and* demo video.** An HTML deck, plus a storyboarded 60–90 s
   demo video recorded and edited in [Recordly](https://github.com/webadderallorg/Recordly).
-- **45 best-in-class skills, one command.** Pulled straight from their authors
+- **50 best-in-class skills, one command.** Pulled straight from their authors
   (Anthropic, Expo, shadcn, Vercel, Emil Kowalski, Paul Bakaus, …) and linked into
   Claude Code, Cursor and Codex.
 
@@ -56,9 +58,9 @@ three.
 | 1 | Idea check | 15 min | `founder-validate-idea`, `last30days` | problem + who + a real quote/number |
 | 2 | MVP scope | 15 min | `founder-mvp-scope`, `pm-prioritize-features` | `MVP.md`: 3–4 features, one flow |
 | 3 | Market & business | 30 / 10 min | `pm-ideal-customer-profile`, `pm-beachhead-segment`, `founder-competitor-matrix`, `pm-market-sizing`, `founder-pricing-strategy`, `pm-monetization-strategy`, `pm-lean-canvas`, `pm-growth-loops`, `founder-go-to-market` | `MARKET.md`: ICP, competitors, TAM/SAM/SOM, pricing, business model, scalability |
-| 4 | Brand | 15 min | `logo-design` | logo SVG + `DESIGN.md` |
+| 4 | Brand | 20 min | `pm-product-name`, `pm-positioning-ideas`, `pm-value-prop-statements`, `product-marketing`, `logo-design` | `BRAND.md` (name, positioning, tagline, voice) + logo + `DESIGN.md` |
 | 5 | UI direction | 10 min | `frontend-design`, `design-taste-frontend` / `hallmark`, `ui-ux-pro-max`, `refero-design` | design direction locked |
-| 6 | Build | ~1.3–1.7 h | + branch for web / dashboard / mobile (below) | happy path + `DEMO.md` |
+| 6 | Build | ~1.25–1.6 h | + branch for web / dashboard / mobile (below) | happy path + `DEMO.md` |
 | 7 | Polish + freeze | 15 min | `impeccable`, `emil-design-eng`, `animate` | no more features |
 | 8 | Repo README | 15 min | badges, proof table, screenshots | judge-ready `README.md` |
 | 9 | Pitch story | 10 min | `founder-pitch-deck`, `pm-value-proposition` + `MARKET.md` | `PITCH.md` |

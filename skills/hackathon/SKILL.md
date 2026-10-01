@@ -1,6 +1,6 @@
 ---
 name: hackathon
-description: Strict phase-by-phase playbook for short hackathons (a few hours) where the pitch, demo and look matter more than depth. Walks idea → MVP scope → market & business model (sizing, competitors, pricing, scalability) → brand → UI → build → judge-ready GitHub README → pitch deck and/or demo video (recorded in Recordly) → rehearsal, naming the exact installed skill for each phase, and tracks progress in HACKATHON.md so no step gets silently skipped. Use when the user mentions a hackathon, a demo day, a time-boxed build, "what should we build", "cut the scope", "market research", "pricing", "business model", "make the pitch", "README", "demo video", or asks which skill to use for startup/pitch/presentation work.
+description: Strict phase-by-phase playbook for short hackathons (a few hours) where the pitch, demo and look matter more than depth. Walks idea → MVP scope → market & business model (sizing, competitors, pricing, scalability) → brand (name, positioning, voice, logo) → UI → build → judge-ready GitHub README → pitch deck and/or demo video (recorded in Recordly) → rehearsal, naming the exact installed skill for each phase, and tracks progress in HACKATHON.md so no step gets silently skipped. Use when the user mentions a hackathon, a demo day, a time-boxed build, "what should we build", "cut the scope", "market research", "pricing", "business model", "brand voice", "make the pitch", "README", "demo video", or asks which skill to use for startup/pitch/presentation work.
 ---
 
 # Hackathon playbook
@@ -45,7 +45,7 @@ Start: <HH:MM>   End: <HH:MM>   Deliverables: deck ☐ video ☐ live demo ☐
 - [ ] 1. Idea check — <one-sentence problem>
 - [ ] 2. MVP scope — <3–4 features, critical flow>
 - [ ] 3. Market & business — depth: full ☐ lite ☐ (from judging criteria)
-- [ ] 4. Brand — logo + DESIGN.md
+- [ ] 4. Brand — BRAND.md (name, positioning, voice) + logo + DESIGN.md
 - [ ] 5. UI direction — DESIGN.md direction locked
 - [ ] 6. Build — happy path works end to end
 - [ ] 7. Polish + feature freeze
@@ -68,9 +68,9 @@ empty, every box must end up ticked.
 | 1 | Idea check | 15 min | `founder-validate-idea`, then `last30days` on the problem (real complaints, quotes, numbers) | one-sentence problem + who has it + 1 real quote/number for the pitch |
 | 2 | MVP scope | 15 min | `founder-mvp-scope` (must / should / won't). Second opinion: `pm-prioritize-features` | `MVP.md`: 3–4 features max, one critical user flow, won't-have list |
 | 3 | Market & business | 30 min full / 10 min lite | see **Market & business model** below | `MARKET.md` |
-| 4 | Brand | 15 min | `logo-design` (brief → concepts → SVG → mini brand guidelines) | logo SVG + `DESIGN.md` (2–3 colours, 1–2 fonts) |
+| 4 | Brand | 20 min | see **Brand: verbal + visual** below | `BRAND.md` + logo SVG + `DESIGN.md` (2–3 colours, 1–2 fonts) |
 | 5 | UI direction | 10 min, then during build | `frontend-design` (commit to one bold aesthetic, plan before code) + `design-taste-frontend` or `hallmark`; tokens/palettes/fonts: `ui-ux-pro-max`; references: `refero-design`. Then the branch for your product type below | direction + tokens written into `DESIGN.md` |
-| 6 | Build | ~1 h 20 (full) / ~1 h 40 (lite) | normal coding, **only** the flow from `MVP.md`; seed realistic data | happy path works end to end, `DEMO.md` with the exact click path |
+| 6 | Build | ~1 h 15 (full) / ~1 h 35 (lite) | normal coding, **only** the flow from `MVP.md`; seed realistic data; every UI string (headlines, buttons, empty and error states) in the `BRAND.md` voice — `copywriting` for landing/hero copy | happy path works end to end, `DEMO.md` with the exact click path |
 | 7 | Polish + freeze | 15 min | `impeccable` (polish / critique / audit); motion: `emil-design-eng`, `animate` | no feature work after this point |
 | 8 | Repo README | 15 min | see **Repo README for judges** below | `README.md` + `docs/` screenshots; repo description and topics drafted |
 | 9 | Pitch story | 10 min | `founder-pitch-deck` (structure), `pm-value-proposition`; pull market, competition, pricing and scalability straight from `MARKET.md` | `PITCH.md`: story + speaker notes, ≤ 3 min spoken |
@@ -116,6 +116,37 @@ gap) · Market size (TAM/SAM/SOM + sources) · Pricing (tiers + unit economics) 
 Business model (lean canvas) · Scalability (growth loop + first 100 users +
 cost curve) · Sources. The README (phase 8), pitch (phase 9) and slides (phase 10) take their
 market, competition, business-model and scale slides from this file.
+
+## Brand: verbal + visual (phase 4)
+
+A logo is not a brand. Judges remember a name, one line and a consistent voice
+across the UI, README, pitch and video. Do every step:
+
+1. **Name** — keep the user's name if they have one; otherwise
+   `pm-product-name` (5 options, user picks). Check the name is not an obvious
+   existing product in the same space (search it once).
+2. **Positioning** — `pm-positioning-ideas`, using the competitor matrix from
+   `MARKET.md`: one statement — *For <ICP> who <pain>, <name> is the <category>
+   that <key benefit>, unlike <alternative>.*
+3. **Tagline + key messages** — `pm-value-prop-statements`: a tagline (≤ 8
+   words) and the 3 messages every surface repeats.
+4. **Voice & tone** — `product-marketing` to write the product context, then
+   fill the voice section of `BRAND.md`:
+   - 3 traits as *we are X, not Y* (e.g. "confident, not arrogant");
+   - words to use / words to avoid (ban generic AI filler: "seamless",
+     "revolutionary", "unlock", "empower", "leverage");
+   - sample lines in the voice: hero headline, primary button, empty state,
+     error message, first sentence of the pitch;
+   - tone shifts per surface: UI (short, plain), README (precise, proof-first),
+     pitch (energetic, concrete), video captions (one idea per line).
+5. **Visual** — `logo-design` (brief → concepts → SVG → mini guidelines), then
+   colours and fonts into `DESIGN.md`. The logo brief uses the positioning and
+   voice traits from steps 2–4.
+
+`BRAND.md` sections: Name · Positioning · Tagline · Key messages · Voice
+(traits, use/avoid, sample lines, tone per surface). Every later phase that
+writes words — UI copy (6), README (8), pitch (9), slides (10), video
+voiceover and captions (11) — follows it.
 
 ## Repo README for judges (phase 8)
 
@@ -240,6 +271,7 @@ Pick the branch that matches what you are building, on top of phase 5:
 
 ## Rules of thumb
 
+- One voice everywhere: if a sentence would not fit `BRAND.md`, rewrite it.
 - Cut scope before writing code. If a feature is not in `DEMO.md`, it does not exist.
 - Hardcode / seed data freely; judges do not see the backend.
 - The pitch follows: problem (with a real quote or number) → who → demo → market & business (when judged) → why now → ask.

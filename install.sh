@@ -97,6 +97,9 @@ phuryn/pm-skills|pm-go-to-market/skills/growth-loops|pm-growth-loops|pm
 phuryn/pm-skills|pm-market-research/skills/market-sizing|pm-market-sizing|pm
 phuryn/pm-skills|pm-product-strategy/skills/monetization-strategy|pm-monetization-strategy|pm
 phuryn/pm-skills|pm-product-strategy/skills/business-model|pm-business-model|pm
+phuryn/pm-skills|pm-marketing-growth/skills/product-name|pm-product-name|pm
+phuryn/pm-skills|pm-marketing-growth/skills/positioning-ideas|pm-positioning-ideas|pm
+phuryn/pm-skills|pm-marketing-growth/skills/value-prop-statements|pm-value-prop-statements|pm
 mvanhorn/last30days-skill|skills/last30days|last30days|none
 kaankiziltug/logo-design-skill|skills/logo-design|logo-design|none
 anthropics/skills|skills/frontend-design|frontend-design|none
@@ -120,6 +123,8 @@ vercel-labs/agent-skills|skills/react-native-skills|vercel-react-native-skills|n
 zarazhangrui/frontend-slides|plugins/frontend-slides/skills/frontend-slides|frontend-slides|none
 mattpocock/skills|skills/productivity/grill-me|grill-me|none
 coreyhaines31/marketingskills|skills/social|social-content|none
+coreyhaines31/marketingskills|skills/product-marketing|product-marketing|none
+coreyhaines31/marketingskills|skills/copywriting|copywriting|none
 claude-office-skills/skills|infographic|infographic|none
 '
 
