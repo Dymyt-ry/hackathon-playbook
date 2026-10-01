@@ -233,8 +233,9 @@ install_all() {
 $MANIFEST
 EOF
   done
-  [ -d "$STORE/_founder-shared" ] && [ "$DRY_RUN" = 0 ] && \
-    sed_i -e 's#/founder:\([a-z-]*\)#founder-\1#g' "$STORE/_founder-shared/conventions.md" 2>/dev/null || true
+  if [ -f "$STORE/_founder-shared/conventions.md" ] && [ "$DRY_RUN" = 0 ]; then
+    sed_i -e 's#/founder:\([a-z-]*\)#founder-\1#g' "$STORE/_founder-shared/conventions.md"
+  fi
 
   link_all
   say ""
