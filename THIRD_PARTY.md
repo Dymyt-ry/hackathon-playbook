@@ -6,13 +6,12 @@ and stays under its own license. Nothing below is redistributed from here.
 
 | Skills (installed name) | Source | License |
 |---|---|---|
-| `founder-validate-idea`, `founder-mvp-scope`, `founder-pitch-deck`, `founder-competitor-matrix`, `founder-landing-page`, `founder-go-to-market`, `founder-pricing-strategy`, `founder-product-brief`, `founder-persona-gen`, `founder-user-interviews` | [emotixco/claude-skills-founder](https://github.com/emotixco/claude-skills-founder) | MIT |
-| `pm-prioritize-features`, `pm-brainstorm-ideas-new`, `pm-brainstorm-experiments-new`, `pm-interview-script`, `pm-value-proposition`, `pm-lean-canvas`, `pm-startup-canvas`, `pm-ideal-customer-profile`, `pm-beachhead-segment`, `pm-growth-loops`, `pm-market-sizing`, `pm-monetization-strategy`, `pm-business-model`, `pm-product-name`, `pm-positioning-ideas`, `pm-value-prop-statements` | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | MIT |
+| `founder-validate-idea`, `founder-mvp-scope`, `founder-pitch-deck`, `founder-competitor-matrix`, `founder-go-to-market`, `founder-pricing-strategy`, `founder-user-interviews` | [emotixco/claude-skills-founder](https://github.com/emotixco/claude-skills-founder) | MIT |
+| `pm-brainstorm-ideas-new`, `pm-value-proposition`, `pm-lean-canvas`, `pm-ideal-customer-profile`, `pm-beachhead-segment`, `pm-growth-loops`, `pm-market-sizing`, `pm-product-name`, `pm-positioning-ideas` | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | MIT |
 | `last30days` | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | MIT |
 | `logo-design` | [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) | MIT (its reference library contains third-party logos, which are trademarks of their owners — see the upstream TRADEMARKS.md) |
 | `frontend-design` | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/frontend-design) | Apache-2.0 (LICENSE.txt in the skill folder) |
 | `design-taste-frontend` | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | MIT |
-| `hallmark` | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | MIT |
 | `ui-ux-pro-max` | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | MIT |
 | `refero-design` | [referodesign/refero_skill](https://github.com/referodesign/refero_skill) | MIT |
 | `impeccable` | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache-2.0 |
@@ -29,8 +28,8 @@ and stays under its own license. Nothing below is redistributed from here.
 
 Text only, never code:
 
-- `founder-*` and `pm-*` are prefixed so they do not collide with each other
-  (both packs ship a `pricing-strategy`) and group together in skill pickers.
+- `founder-*` and `pm-*` are prefixed so the two packs cannot collide (both
+  ship a `pricing-strategy` upstream) and stay grouped in skill pickers.
 - `founder-*` skills come from a Claude Code plugin and point at
   `${CLAUDE_PLUGIN_ROOT}/shared/conventions.md`. Only Claude Code plugins expand
   that variable, so the installer rewrites it to the absolute path of the copied
