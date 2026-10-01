@@ -108,8 +108,9 @@ proportionally.
 | 12 | Rehearsal | 5 | 15 | 30 | 45 | 60 |
 | — | Sleep + meals + buffer | — | — | — | 330 | 760 |
 
-1. 24 h / 48 h: add real user validation — `founder-user-interviews` or
-   `pm-interview-script`, talk to 3–5 people (other teams, mentors, online
+1. 24 h / 48 h: add real user validation — `founder-user-interviews` is the
+   main skill (Mom Test script, screening, analysis of the answers); add
+   `pm-interview-script` for extra Jobs-to-be-Done probing questions. Talk to 3–5 people (other teams, mentors, online
    communities), and record what they said in `IDEA.md`.
 2. 2 h: market runs **lite** regardless of criteria (ICP, 3 competitors, one
    pricing table) — that is this profile's definition, written in `HACKATHON.md`.
