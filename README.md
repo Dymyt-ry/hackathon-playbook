@@ -7,7 +7,7 @@
 [![CI](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-8b5cf6.svg)](https://agentskills.io)
-[![Skills](https://img.shields.io/badge/skills_routed-52-0ea5e9.svg)](THIRD_PARTY.md)
+[![Skills](https://img.shields.io/badge/skills_routed-57-0ea5e9.svg)](THIRD_PARTY.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-f97316.svg)](#contributing)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-supported-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
@@ -46,7 +46,7 @@ three.
   can verify in two minutes.
 - **Pitch deck *and* demo video.** An HTML deck, plus a storyboarded 60–90 s
   demo video recorded and edited in [Recordly](https://github.com/webadderallorg/Recordly).
-- **52 best-in-class skills, one command.** Pulled straight from their authors
+- **57 best-in-class skills, one command.** Pulled straight from their authors
   (Anthropic, Expo, shadcn, Vercel, Emil Kowalski, Paul Bakaus, …) and linked into
   Claude Code, Cursor and Codex.
 
@@ -99,6 +99,11 @@ Phase 0 asks for the event length and team size and picks a profile (you confirm
 | 2 | **Builder** (UI, build, polish) · **Story** (brand, market, README prose, pitch, slides, video) |
 | 3–4 | **Builder ×1–2** · **Designer** (brand visual, UI, polish, screenshots, video) · **Business & pitch** |
 | 5+ | the above + **Captain** (clock, `HACKATHON.md`, merges, submission) + **Demo owner** |
+
+Teams also get a git workflow that keeps `main` demoable: protected `main`, a
+minimal CI, one worktree per agent, small reviewed PRs verified on the demo path,
+instant revert when `main` breaks, and `demo-ok` / `demo-final` tags to fall back
+to (skills from [obra/superpowers](https://github.com/obra/superpowers)).
 
 Tracks run in parallel after the MVP scope with four sync points (after scope,
 mid-build, feature freeze, rehearsal), so a team of two at 4.5 h gets ~2.5 h of
@@ -172,7 +177,8 @@ This playbook is glue; the craft lives in the skills it routes to. Huge thanks t
 [Zara Zhang](https://github.com/zarazhangrui/frontend-slides),
 [Matt Pocock](https://github.com/mattpocock/skills),
 [Corey Haines](https://github.com/coreyhaines31/marketingskills),
-[Claude Office Skills](https://github.com/claude-office-skills/skills) and the
+[Claude Office Skills](https://github.com/claude-office-skills/skills),
+[Jesse Vincent](https://github.com/obra/superpowers) and the
 [Recordly](https://github.com/webadderallorg/Recordly) team.
 
 ## Contributing

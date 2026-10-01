@@ -127,6 +127,11 @@ mattpocock/skills|skills/productivity/grill-me|grill-me|none
 coreyhaines31/marketingskills|skills/social|social-content|none
 coreyhaines31/marketingskills|skills/product-marketing|product-marketing|none
 coreyhaines31/marketingskills|skills/copywriting|copywriting|none
+obra/superpowers|skills/using-git-worktrees|using-git-worktrees|none
+obra/superpowers|skills/verification-before-completion|verification-before-completion|none
+obra/superpowers|skills/requesting-code-review|requesting-code-review|none
+obra/superpowers|skills/receiving-code-review|receiving-code-review|none
+obra/superpowers|skills/finishing-a-development-branch|finishing-a-development-branch|none
 claude-office-skills/skills|infographic|infographic|none
 '
 

@@ -25,7 +25,7 @@ referenced="$(grep -oE '`[a-z0-9]+(-[a-z0-9]+)+`|`(animate|hallmark|impeccable|s
 for s in $referenced; do
   case " $optional hackathon " in *" $s "*) continue ;; esac
   # Filenames and placeholders that look like skill names are not skills.
-  case "$s" in *.md|ui-by-product-type) continue ;; esac
+  case "$s" in *.md|ui-by-product-type|demo-final|demo-ok) continue ;; esac
   if ! printf '%s\n' "$installed" | grep -qx "$s"; then
     echo "SKILL.md routes to '$s' but install.sh does not install it"; fail=1
   fi

@@ -1,6 +1,6 @@
 ---
 name: hackathon
-description: Strict phase-by-phase playbook for short hackathons (a few hours) where the pitch, demo and look matter more than depth. Walks idea → MVP scope → market & business model (sizing, competitors, pricing, scalability) → brand (name, positioning, voice, logo) → UI → build → judge-ready GitHub README → pitch deck and/or demo video (recorded in Recordly) → rehearsal, scales to the event length (2 h to 48 h) and team size (solo to 5+ with parallel tracks), names the exact installed skill for each phase, and tracks progress in HACKATHON.md so no step gets silently skipped. Use when the user mentions a hackathon, a demo day, a time-boxed build, "what should we build", "cut the scope", "market research", "pricing", "business model", "brand voice", "make the pitch", "README", "demo video", or asks which skill to use for startup/pitch/presentation work.
+description: Strict phase-by-phase playbook for short hackathons (a few hours) where the pitch, demo and look matter more than depth. Walks idea → MVP scope → market & business model (sizing, competitors, pricing, scalability) → brand (name, positioning, voice, logo) → UI → build → judge-ready GitHub README → pitch deck and/or demo video (recorded in Recordly) → rehearsal, scales to the event length (2 h to 48 h) and team size (solo to 5+ with parallel tracks and a safe git workflow: worktrees, PRs, an always-demoable main), names the exact installed skill for each phase, and tracks progress in HACKATHON.md so no step gets silently skipped. Use when the user mentions a hackathon, a demo day, a time-boxed build, "what should we build", "cut the scope", "market research", "pricing", "business model", "brand voice", "make the pitch", "README", "demo video", "merge", "PR", "branch", or asks which skill to use for startup/pitch/presentation work.
 ---
 
 # Hackathon playbook
@@ -67,7 +67,7 @@ ticked.
 
 | # | Phase | Time | Use skill | Output (must exist before moving on) |
 |---|---|---|---|---|
-| 0 | Kickoff | 5 min | — Ask: **event length and team size** → pick the profile and roles from **Scale to your event** and get the user's OK; **judging criteria** (product only? or also business model, market, scalability, viability?), pitch length, **deliverables: deck, demo video, live demo, or all** (default: deck + video), team roles, submission format/deadline | `HACKATHON.md` created, judging criteria written down |
+| 0 | Kickoff | 5 min (+10 git setup for teams) | — Ask: **event length and team size** → pick the profile and roles from **Scale to your event** and get the user's OK; **judging criteria** (product only? or also business model, market, scalability, viability?), pitch length, **deliverables: deck, demo video, live demo, or all** (default: deck + video), team roles, submission format/deadline | `HACKATHON.md` created, judging criteria written down |
 | 1 | Idea check | 15 min | `founder-validate-idea`, then `last30days` on the problem (real complaints, quotes, numbers) | one-sentence problem + who has it + 1 real quote/number for the pitch |
 | 2 | MVP scope | 15 min | `founder-mvp-scope` (must / should / won't). Second opinion: `pm-prioritize-features` | `MVP.md`: 3–4 features max, one critical user flow, won't-have list |
 | 3 | Market & business | 30 min full / 10 min lite | see **Market & business model** below | `MARKET.md` |
@@ -130,8 +130,8 @@ Every track owns its phases end to end; nobody redoes another track's output.
 | Team | Roles and the phases they own |
 |---|---|
 | **Solo** | You do every phase in order, as in the table above. |
-| **2** | **Builder:** 5, 6, 7, tech parts of 8 (quickstart, architecture, screenshots). **Story:** 4 (visual first, so the builder has `DESIGN.md` early), 3, prose of 8, 9, 10, 11. |
-| **3–4** | **Builder ×1–2** (split the critical flow: front / back, or screen by screen): 6, 7. **Designer:** 4 visual, 5, UI polish in 7, screenshots, 11. **Business & pitch:** 3, 4 verbal, prose of 8, 9, 10. |
+| **2** | **Builder** (also the git setup in phase 0): 5, 6, 7, tech parts of 8 (quickstart, architecture, screenshots). **Story:** 4 (visual first, so the builder has `DESIGN.md` early), 3, prose of 8, 9, 10, 11. |
+| **3–4** | **Builder ×1–2** (one of them does the git setup in phase 0; split the critical flow: front / back, or screen by screen): 6, 7. **Designer:** 4 visual, 5, UI polish in 7, screenshots, 11. **Business & pitch:** 3, 4 verbal, prose of 8, 9, 10. |
 | **5+** | As 3–4, plus a **Captain** who owns `HACKATHON.md`, the clock, merges and the final submission, and a **Demo owner** who owns `DEMO.md`, 11 and the backup video. Never more than one person per surface (README, deck, video). |
 
 **Sync points (everyone, ≤ 10 min each):**
@@ -147,10 +147,49 @@ freeze moves to just before video + rehearsal. In a team of 2+ at 4.5 h: build
 0:55–3:35 (~2 h 30 after the S2 check), polish + freeze 3:35–3:50, demo video
 3:50–4:15, rehearsal 4:15–4:30.
 
+**Git for teams of 2+:** follow **Team git workflow** below from phase 0 on —
+it is what keeps a late merge from breaking the demo.
+
 **Several agents on one team:** each person's agent works only on the phases
 its person owns, reads the other tracks' files (`MARKET.md`, `BRAND.md`,
 `DESIGN.md`, `DEMO.md`) instead of regenerating them, and ticks only its own
 lines in `HACKATHON.md`.
+
+## Team git workflow (teams of 2+)
+
+A broken `main` an hour before judging is the most common way teams lose a
+working demo. These rules are part of the plan, not optional hygiene.
+
+**Phase 0 setup (the Captain in 5+, otherwise a builder; ~10 min taken from the build):**
+- One GitHub repo; everyone pushes branches, nobody commits to `main`.
+- Branch protection on `main`: pull request required, 1 approval, status
+  checks must pass, no force-push.
+- A minimal CI (`.github/workflows/ci.yml`): install, build, typecheck/lint —
+  whatever proves the app still starts. A red check blocks the merge.
+- Each person's agent works in **its own git worktree** (`using-git-worktrees`)
+  so two agents never edit the same checkout.
+- One owner for dependencies: only they change `package.json` / lockfiles.
+
+**While building:**
+- Short-lived branches: one per task from `MVP.md`, merged within ~1 h.
+  Small PRs; pull `main` into your branch before opening the PR.
+- Before a PR: `verification-before-completion` — run the app and click the
+  `DEMO.md` happy path; paste what you ran into the PR description.
+- Review: `requesting-code-review` before merge (another person or their
+  agent), `receiving-code-review` when you get feedback.
+- Merge: `finishing-a-development-branch`; squash-merge only when CI is green and
+  the reviewer clicked the demo path on the branch.
+- After every merge to `main`: everyone pulls; the person who merged runs the
+  demo path on `main` within 5 minutes.
+- **`main` broke?** Revert the merge right away (`git revert -m 1 <merge>` via a
+  PR), get `main` green, then fix on the branch. Never fix forward on `main`
+  under time pressure, never force-push.
+- Tag every known-good `main`: `demo-ok-<HHMM>`. The latest tag is your
+  fallback for the live demo.
+
+**From feature freeze (phase 7):**
+- Only the Captain merges, only fixes, each one re-checked on the demo path.
+- Tag `demo-final`; deploy, screenshot and record the video **from that tag**.
 
 ## Market & business model (phase 3)
 

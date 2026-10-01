@@ -24,6 +24,7 @@ and stays under its own license. Nothing below is redistributed from here.
 | `grill-me` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT |
 | `social-content` (upstream name `social`), `product-marketing`, `copywriting` | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT |
 | `infographic` | [claude-office-skills/skills](https://github.com/claude-office-skills/skills) | MIT |
+| `using-git-worktrees`, `verification-before-completion`, `requesting-code-review`, `receiving-code-review`, `finishing-a-development-branch` | [obra/superpowers](https://github.com/obra/superpowers) | MIT |
 
 ## What the installer changes
 
