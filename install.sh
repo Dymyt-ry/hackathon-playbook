@@ -85,9 +85,11 @@ emotixco/claude-skills-founder|skills/go-to-market|founder-go-to-market|founder
 emotixco/claude-skills-founder|skills/pricing-strategy|founder-pricing-strategy|founder
 emotixco/claude-skills-founder|skills/product-brief|founder-product-brief|founder
 emotixco/claude-skills-founder|skills/persona-gen|founder-persona-gen|founder
+emotixco/claude-skills-founder|skills/user-interviews|founder-user-interviews|founder
 phuryn/pm-skills|pm-product-discovery/skills/prioritize-features|pm-prioritize-features|pm
 phuryn/pm-skills|pm-product-discovery/skills/brainstorm-ideas-new|pm-brainstorm-ideas-new|pm
 phuryn/pm-skills|pm-product-discovery/skills/brainstorm-experiments-new|pm-brainstorm-experiments-new|pm
+phuryn/pm-skills|pm-product-discovery/skills/interview-script|pm-interview-script|pm
 phuryn/pm-skills|pm-product-strategy/skills/value-proposition|pm-value-proposition|pm
 phuryn/pm-skills|pm-product-strategy/skills/lean-canvas|pm-lean-canvas|pm
 phuryn/pm-skills|pm-product-strategy/skills/startup-canvas|pm-startup-canvas|pm

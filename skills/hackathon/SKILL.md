@@ -1,6 +1,6 @@
 ---
 name: hackathon
-description: Strict phase-by-phase playbook for short hackathons (a few hours) where the pitch, demo and look matter more than depth. Walks idea → MVP scope → market & business model (sizing, competitors, pricing, scalability) → brand (name, positioning, voice, logo) → UI → build → judge-ready GitHub README → pitch deck and/or demo video (recorded in Recordly) → rehearsal, naming the exact installed skill for each phase, and tracks progress in HACKATHON.md so no step gets silently skipped. Use when the user mentions a hackathon, a demo day, a time-boxed build, "what should we build", "cut the scope", "market research", "pricing", "business model", "brand voice", "make the pitch", "README", "demo video", or asks which skill to use for startup/pitch/presentation work.
+description: Strict phase-by-phase playbook for short hackathons (a few hours) where the pitch, demo and look matter more than depth. Walks idea → MVP scope → market & business model (sizing, competitors, pricing, scalability) → brand (name, positioning, voice, logo) → UI → build → judge-ready GitHub README → pitch deck and/or demo video (recorded in Recordly) → rehearsal, scales to the event length (2 h to 48 h) and team size (solo to 5+ with parallel tracks), names the exact installed skill for each phase, and tracks progress in HACKATHON.md so no step gets silently skipped. Use when the user mentions a hackathon, a demo day, a time-boxed build, "what should we build", "cut the scope", "market research", "pricing", "business model", "brand voice", "make the pitch", "README", "demo video", or asks which skill to use for startup/pitch/presentation work.
 ---
 
 # Hackathon playbook
@@ -40,8 +40,10 @@ rules exist to stop exactly that.
 ```markdown
 # Hackathon — <project name>
 Start: <HH:MM>   End: <HH:MM>   Deliverables: deck ☐ video ☐ live demo ☐
+Profile: <2h | 4.5h | 8h | 24h | 48h>   Team: <solo | 2 | 3–4 | 5+>   Confirmed by user: ☐
+Roles: <name/handle → role>          (owner column below uses these)
 
-- [ ] 0. Kickoff — rules, judging criteria, deliverables, team roles
+- [ ] 0. Kickoff — rules, judging criteria, deliverables, profile, roles      @owner
 - [ ] 1. Idea check — <one-sentence problem>
 - [ ] 2. MVP scope — <3–4 features, critical flow>
 - [ ] 3. Market & business — depth: full ☐ lite ☐ (from judging criteria)
@@ -57,14 +59,15 @@ Start: <HH:MM>   End: <HH:MM>   Deliverables: deck ☐ video ☐ live demo ☐
 Skipped by user: <phase — user's words — time>
 ```
 
-Only the user's explicit words go under "Skipped by user". If that line is
-empty, every box must end up ticked.
+Every line ends with its owner (`@handle`, or `@all`). Only the user's explicit
+words go under "Skipped by user". If that line is empty, every box must end up
+ticked.
 
-## Phases (timeboxes for ~4.5 h — scale proportionally)
+## Phases (timeboxes shown for the 4.5 h solo profile — see **Scale to your event**)
 
 | # | Phase | Time | Use skill | Output (must exist before moving on) |
 |---|---|---|---|---|
-| 0 | Kickoff | 5 min | — Ask: **judging criteria** (product only? or also business model, market, scalability, viability?), pitch length, **deliverables: deck, demo video, live demo, or all** (default: deck + video), team roles, submission format/deadline | `HACKATHON.md` created, judging criteria written down |
+| 0 | Kickoff | 5 min | — Ask: **event length and team size** → pick the profile and roles from **Scale to your event** and get the user's OK; **judging criteria** (product only? or also business model, market, scalability, viability?), pitch length, **deliverables: deck, demo video, live demo, or all** (default: deck + video), team roles, submission format/deadline | `HACKATHON.md` created, judging criteria written down |
 | 1 | Idea check | 15 min | `founder-validate-idea`, then `last30days` on the problem (real complaints, quotes, numbers) | one-sentence problem + who has it + 1 real quote/number for the pitch |
 | 2 | MVP scope | 15 min | `founder-mvp-scope` (must / should / won't). Second opinion: `pm-prioritize-features` | `MVP.md`: 3–4 features max, one critical user flow, won't-have list |
 | 3 | Market & business | 30 min full / 10 min lite | see **Market & business model** below | `MARKET.md` |
@@ -77,6 +80,76 @@ empty, every box must end up ticked.
 | 10 | Slides (if deck) | 20 min | `frontend-slides` (animated HTML deck in the browser; can export PDF). Need PowerPoint? use your agent's `pptx` skill if it has one | the deck file (+ PDF backup) |
 | 11 | Demo video (if video) | 25 min | see **Demo video** below | `DEMO_VIDEO.md` storyboard + exported MP4 |
 | 12 | Rehearsal | 15 min | `grill-me` to get grilled like a judge; run the pitch out loud with a timer 3× | answers to the likeliest questions — always including "how do you make money?", "how big is this?", "how does it scale?", "why you and not <competitor>?"; backup screenshots/video for a live-demo failure |
+
+## Scale to your event
+
+Pick the profile in phase 0 from the **event length and team size the user
+gives you**, write it into `HACKATHON.md` and get the user's OK. The profile is
+part of the plan, not a shortcut: you never switch to a smaller profile on your
+own. For a length between profiles, take the nearer one and scale its times
+proportionally.
+
+### By event length (minutes per phase, solo)
+
+| # | Phase | 2 h | 4.5 h | 8 h | 24 h | 48 h |
+|---|---|---|---|---|---|---|
+| 0 | Kickoff | 5 | 5 | 10 | 15 | 20 |
+| 1 | Idea check | 10 | 15 | 25 | 90 ¹ | 180 ¹ |
+| 2 | MVP scope | 10 | 15 | 20 | 30 | 45 |
+| 3 | Market & business | 5 ² | 30 / 10 | 45 | 75 | 120 |
+| 4 | Brand | 10 ³ | 20 | 35 | 60 | 90 |
+| 5 | UI direction | 5 | 10 | 20 | 30 | 60 |
+| 6 | Build | 45 | 75 | 160 | 540 ⁴ | 1200 ⁴ |
+| 7 | Polish + freeze | 5 | 15 | 30 | 60 | 120 |
+| 8 | Repo README | 5 ⁵ | 15 | 25 | 45 | 60 |
+| 9 | Pitch story | 5 | 10 | 20 | 30 | 45 |
+| 10 | Slides | 10 ⁶ | 20 | 30 | 45 | 60 |
+| 11 | Demo video | ⁶ | 25 | 30 | 45 | 60 |
+| 12 | Rehearsal | 5 | 15 | 30 | 45 | 60 |
+| — | Sleep + meals + buffer | — | — | — | 330 | 760 |
+
+1. 24 h / 48 h: add real user validation — `founder-user-interviews` or
+   `pm-interview-script`, talk to 3–5 people (other teams, mentors, online
+   communities), and record what they said in `IDEA.md`.
+2. 2 h: market runs **lite** regardless of criteria (ICP, 3 competitors, one
+   pricing table) — that is this profile's definition, written in `HACKATHON.md`.
+3. 2 h: name, one-line positioning, tagline, 3 voice traits, a wordmark logo.
+4. 24 h / 48 h: build in blocks of ~3 h, each ending in a **checkpoint** — the
+   happy path runs end to end, commit, tick a line in `HACKATHON.md`. Deploy to a
+   public URL before the first sleep.
+5. 2 h: README = first screen + proof table + quickstart + limits.
+6. 2 h: deck **or** video — the one the judges require; both only if the user
+   asks. Slides and video share the 10 min.
+
+### By team size
+
+Same phases, split into tracks that run **in parallel** after the MVP scope.
+Every track owns its phases end to end; nobody redoes another track's output.
+
+| Team | Roles and the phases they own |
+|---|---|
+| **Solo** | You do every phase in order, as in the table above. |
+| **2** | **Builder:** 5, 6, 7, tech parts of 8 (quickstart, architecture, screenshots). **Story:** 4 (visual first, so the builder has `DESIGN.md` early), 3, prose of 8, 9, 10, 11. |
+| **3–4** | **Builder ×1–2** (split the critical flow: front / back, or screen by screen): 6, 7. **Designer:** 4 visual, 5, UI polish in 7, screenshots, 11. **Business & pitch:** 3, 4 verbal, prose of 8, 9, 10. |
+| **5+** | As 3–4, plus a **Captain** who owns `HACKATHON.md`, the clock, merges and the final submission, and a **Demo owner** who owns `DEMO.md`, 11 and the backup video. Never more than one person per surface (README, deck, video). |
+
+**Sync points (everyone, ≤ 10 min each):**
+- **S1 after phase 2** — everyone agrees on the critical flow and `MVP.md`.
+- **S2 halfway through the build** — does the happy path run end to end? Market
+  and brand findings that change the product land here, not later.
+- **S3 feature freeze (phase 7)** — UI is final; screenshots and video start now.
+- **S4 rehearsal (phase 12)** — the whole team, the real pitch, a timer.
+
+With parallel tracks the build gets the time the other phases would have
+taken: README prose, pitch and slides are written during the build, so the
+freeze moves to just before video + rehearsal. In a team of 2+ at 4.5 h: build
+0:55–3:35 (~2 h 30 after the S2 check), polish + freeze 3:35–3:50, demo video
+3:50–4:15, rehearsal 4:15–4:30.
+
+**Several agents on one team:** each person's agent works only on the phases
+its person owns, reads the other tracks' files (`MARKET.md`, `BRAND.md`,
+`DESIGN.md`, `DEMO.md`) instead of regenerating them, and ticks only its own
+lines in `HACKATHON.md`.
 
 ## Market & business model (phase 3)
 

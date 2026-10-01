@@ -33,7 +33,7 @@ jobs:
           export HOME="$RUNNER_TEMP/home" && mkdir -p "$HOME"
           ./install.sh --agents claude,agents,codex,cursor 2>&1 | tee install.log
           ! grep -q '^  !' install.log
-          test "$(ls "$HOME/.claude/skills" | wc -l)" -eq 51
+          test "$(ls "$HOME/.claude/skills" | wc -l)" -eq 53
       - name: uninstall cleans up
         run: |
           export HOME="$RUNNER_TEMP/home"

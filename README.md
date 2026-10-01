@@ -7,7 +7,7 @@
 [![CI](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-8b5cf6.svg)](https://agentskills.io)
-[![Skills](https://img.shields.io/badge/skills_routed-50-0ea5e9.svg)](THIRD_PARTY.md)
+[![Skills](https://img.shields.io/badge/skills_routed-52-0ea5e9.svg)](THIRD_PARTY.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-f97316.svg)](#contributing)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-supported-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
@@ -46,7 +46,7 @@ three.
   can verify in two minutes.
 - **Pitch deck *and* demo video.** An HTML deck, plus a storyboarded 60–90 s
   demo video recorded and edited in [Recordly](https://github.com/webadderallorg/Recordly).
-- **50 best-in-class skills, one command.** Pulled straight from their authors
+- **52 best-in-class skills, one command.** Pulled straight from their authors
   (Anthropic, Expo, shadcn, Vercel, Emil Kowalski, Paul Bakaus, …) and linked into
   Claude Code, Cursor and Codex.
 
@@ -78,6 +78,32 @@ three.
 | 📊 **Dashboard** | `shadcn` + `ui-ux-pro-max` + `frontend-design` → `impeccable` — one hero metric, 4–6 KPI tiles, realistic seeded data |
 | 📱 **Expo / React Native app** | `expo-overview` → `expo-router` → `expo-design-system` + `expo-native-ui` / `expo-ui` → `expo-animation`, `vercel-react-native-skills`, `apple-design` |
 | 📲 **Mobile web / PWA** | web chain + `mobile-native` + `apple-design` |
+
+## 📏 Scales to your event
+
+Phase 0 asks for the event length and team size and picks a profile (you confirm it):
+
+| | 2 h | 4.5 h | 8 h | 24 h | 48 h |
+|---|:-:|:-:|:-:|:-:|:-:|
+| Build time (solo) | 45 min | 1 h 15 | 2 h 40 | 9 h in 3 h blocks | 20 h in 3 h blocks |
+| Market & business | lite | full or lite* | full | full | full |
+| User interviews | — | — | — | 3–5 people | 3–5 people |
+| Deck + video | one of them | both | both | both | both |
+| Sleep, meals, buffer | — | — | — | 5.5 h | 12.5 h |
+
+<sub>*full when judges score business, market or scalability, or the criteria are unknown.</sub>
+
+| Team | Tracks |
+|---|---|
+| Solo | every phase in order |
+| 2 | **Builder** (UI, build, polish) · **Story** (brand, market, README prose, pitch, slides, video) |
+| 3–4 | **Builder ×1–2** · **Designer** (brand visual, UI, polish, screenshots, video) · **Business & pitch** |
+| 5+ | the above + **Captain** (clock, `HACKATHON.md`, merges, submission) + **Demo owner** |
+
+Tracks run in parallel after the MVP scope with four sync points (after scope,
+mid-build, feature freeze, rehearsal), so a team of two at 4.5 h gets ~2.5 h of
+build instead of 1 h 15. Each teammate's agent works only its own phases and reads
+the others' files instead of regenerating them.
 
 ## 🎬 Demo video
 
