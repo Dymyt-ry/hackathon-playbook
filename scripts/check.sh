@@ -14,12 +14,12 @@ name="$(awk '/^name:/ {print $2; exit}' "$skill")"
 grep -q '^description: ' "$skill" || { echo "description missing in $skill"; fail=1; }
 
 # Skills the agent's own platform may provide; not installed by us.
-optional="pptx"
+optional="pptx research brainstorm dataviz landing-page-design pitch-deck-visuals infographic"
 
 installed="$(grep -E '^[A-Za-z0-9._-]+/[A-Za-z0-9._-]+\|' install.sh | awk -F'|' '{print $3}' | sort -u)"
 # Backticks below are literal Markdown, not shell expansions.
 # shellcheck disable=SC2016
-referenced="$(grep -oE '`[a-z0-9]+(-[a-z0-9]+)+`|`(animate|hallmark|impeccable|shadcn|last30days|pptx)`' "$skill" \
+referenced="$(grep -oE '`[a-z0-9]+(-[a-z0-9]+)+`|`(animate|hallmark|impeccable|shadcn|last30days|pptx|research|brainstorm|dataviz|infographic)`' "$skill" \
   | tr -d '`' | sort -u)"
 
 for s in $referenced; do

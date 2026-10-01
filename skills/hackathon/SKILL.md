@@ -139,6 +139,21 @@ Pick the branch that matches what you are building, on top of phase 4:
 - Feature freeze at phase 6; everything after is deck, video and rehearsal.
 - The live demo always has a backup: the exported video or screenshots.
 
+## Optional boosters — use when installed
+
+Not installed by this playbook. If one of these exists in your skill list, the
+phase **must** use it in addition to the skills above; if it does not exist,
+carry on without it (that is not a skip).
+
+| Phase | Skill | Adds |
+|---|---|---|
+| 1 Idea check | `research` | deep, cited research in parallel with `last30days` |
+| 1 / 2 | `brainstorm` | non-generic idea and feature variants |
+| 5 Build (dashboard) | `dataviz` | chart colour, mark and KPI-tile rules |
+| 5 Build (landing) | `landing-page-design` | hero / above-the-fold / CTA layout rules |
+| 8 Slides | `pitch-deck-visuals` | slide-by-slide layout and data-slide rules |
+| 8 Slides | `infographic` | one strong data / process slide |
+
 ## Other useful skills
 
 - Research: `last30days` (Reddit, X, YouTube, HN, GitHub, Polymarket; TikTok / Instagram with a ScrapeCreators key).
