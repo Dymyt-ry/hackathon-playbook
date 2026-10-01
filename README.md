@@ -30,7 +30,7 @@ three.
 ## ✨ What you get
 
 - **One skill that runs the whole day.** Say *"hackathon"* and the agent walks
-  twelve phases in order, loading the right specialist skill for each one.
+  thirteen phases in order, loading the right specialist skill for each one.
 - **An execution contract.** The agent may not skip, merge or shorten a phase
   on its own. If it falls behind it tells you the numbers and **asks** what to
   cut. Progress is tracked in `HACKATHON.md`, so a skipped step is visible.
@@ -39,6 +39,9 @@ three.
 - **A business, not just a demo.** When judges score market, business model or
   scalability, a dedicated phase sizes the market (TAM/SAM/SOM with sources),
   maps real competitors, prices three tiers and shows how it scales.
+- **A README that sells to judges.** Badges, a "Ready now / Proof" table where
+  every claim links to code or a screenshot, honest limits — the format judges
+  can verify in two minutes.
 - **Pitch deck *and* demo video.** An HTML deck, plus a storyboarded 60–90 s
   demo video recorded and edited in [Recordly](https://github.com/webadderallorg/Recordly).
 - **45 best-in-class skills, one command.** Pulled straight from their authors
@@ -55,12 +58,13 @@ three.
 | 3 | Market & business | 30 / 10 min | `pm-ideal-customer-profile`, `pm-beachhead-segment`, `founder-competitor-matrix`, `pm-market-sizing`, `founder-pricing-strategy`, `pm-monetization-strategy`, `pm-lean-canvas`, `pm-growth-loops`, `founder-go-to-market` | `MARKET.md`: ICP, competitors, TAM/SAM/SOM, pricing, business model, scalability |
 | 4 | Brand | 15 min | `logo-design` | logo SVG + `DESIGN.md` |
 | 5 | UI direction | 10 min | `frontend-design`, `design-taste-frontend` / `hallmark`, `ui-ux-pro-max`, `refero-design` | design direction locked |
-| 6 | Build | ~1.5–2 h | + branch for web / dashboard / mobile (below) | happy path + `DEMO.md` |
+| 6 | Build | ~1.3–1.7 h | + branch for web / dashboard / mobile (below) | happy path + `DEMO.md` |
 | 7 | Polish + freeze | 15 min | `impeccable`, `emil-design-eng`, `animate` | no more features |
-| 8 | Pitch story | 10 min | `founder-pitch-deck`, `pm-value-proposition` + `MARKET.md` | `PITCH.md` |
-| 9 | Slides | 20 min | `frontend-slides` | the deck |
-| 10 | Demo video | 25 min | Recordly + storyboard | `DEMO_VIDEO.md` + MP4 |
-| 11 | Rehearsal | 15 min | `grill-me` | answers to "how do you make money / how big / how does it scale" and more |
+| 8 | Repo README | 15 min | badges, proof table, screenshots | judge-ready `README.md` |
+| 9 | Pitch story | 10 min | `founder-pitch-deck`, `pm-value-proposition` + `MARKET.md` | `PITCH.md` |
+| 10 | Slides | 20 min | `frontend-slides` | the deck |
+| 11 | Demo video | 25 min | Recordly + storyboard | `DEMO_VIDEO.md` + MP4 |
+| 12 | Rehearsal | 15 min | `grill-me` | answers to "how do you make money / how big / how does it scale" and more |
 
 <sub>*for a ~4.5 h event; the agent scales the timeboxes to yours. Phase 3 runs **full** when judges score business, market or scalability (or the criteria are unknown) and **lite** when judging is product-only — decided by the rules, never by the agent.</sub>
 
@@ -75,7 +79,7 @@ three.
 
 ## 🎬 Demo video
 
-Phase 9 writes a storyboard before anything is recorded, then walks you through
+Phase 11 writes a storyboard before anything is recorded, then walks you through
 Recordly:
 
 | Time | Beat | Show |

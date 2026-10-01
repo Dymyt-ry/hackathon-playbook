@@ -1,6 +1,6 @@
 ---
 name: hackathon
-description: Strict phase-by-phase playbook for short hackathons (a few hours) where the pitch, demo and look matter more than depth. Walks idea → MVP scope → market & business model (sizing, competitors, pricing, scalability) → brand → UI → build → pitch deck and/or demo video (recorded in Recordly) → rehearsal, naming the exact installed skill for each phase, and tracks progress in HACKATHON.md so no step gets silently skipped. Use when the user mentions a hackathon, a demo day, a time-boxed build, "what should we build", "cut the scope", "market research", "pricing", "business model", "make the pitch", "demo video", or asks which skill to use for startup/pitch/presentation work.
+description: Strict phase-by-phase playbook for short hackathons (a few hours) where the pitch, demo and look matter more than depth. Walks idea → MVP scope → market & business model (sizing, competitors, pricing, scalability) → brand → UI → build → judge-ready GitHub README → pitch deck and/or demo video (recorded in Recordly) → rehearsal, naming the exact installed skill for each phase, and tracks progress in HACKATHON.md so no step gets silently skipped. Use when the user mentions a hackathon, a demo day, a time-boxed build, "what should we build", "cut the scope", "market research", "pricing", "business model", "make the pitch", "README", "demo video", or asks which skill to use for startup/pitch/presentation work.
 ---
 
 # Hackathon playbook
@@ -49,10 +49,11 @@ Start: <HH:MM>   End: <HH:MM>   Deliverables: deck ☐ video ☐ live demo ☐
 - [ ] 5. UI direction — DESIGN.md direction locked
 - [ ] 6. Build — happy path works end to end
 - [ ] 7. Polish + feature freeze
-- [ ] 8. Pitch story
-- [ ] 9. Slides            (if deck)
-- [ ] 10. Demo video       (if video)
-- [ ] 11. Rehearsal
+- [ ] 8. Repo README — badges, proof table, screenshots
+- [ ] 9. Pitch story
+- [ ] 10. Slides           (if deck)
+- [ ] 11. Demo video       (if video)
+- [ ] 12. Rehearsal
 Skipped by user: <phase — user's words — time>
 ```
 
@@ -69,12 +70,13 @@ empty, every box must end up ticked.
 | 3 | Market & business | 30 min full / 10 min lite | see **Market & business model** below | `MARKET.md` |
 | 4 | Brand | 15 min | `logo-design` (brief → concepts → SVG → mini brand guidelines) | logo SVG + `DESIGN.md` (2–3 colours, 1–2 fonts) |
 | 5 | UI direction | 10 min, then during build | `frontend-design` (commit to one bold aesthetic, plan before code) + `design-taste-frontend` or `hallmark`; tokens/palettes/fonts: `ui-ux-pro-max`; references: `refero-design`. Then the branch for your product type below | direction + tokens written into `DESIGN.md` |
-| 6 | Build | ~1 h 35 (full) / ~1 h 55 (lite) | normal coding, **only** the flow from `MVP.md`; seed realistic data | happy path works end to end, `DEMO.md` with the exact click path |
+| 6 | Build | ~1 h 20 (full) / ~1 h 40 (lite) | normal coding, **only** the flow from `MVP.md`; seed realistic data | happy path works end to end, `DEMO.md` with the exact click path |
 | 7 | Polish + freeze | 15 min | `impeccable` (polish / critique / audit); motion: `emil-design-eng`, `animate` | no feature work after this point |
-| 8 | Pitch story | 10 min | `founder-pitch-deck` (structure), `pm-value-proposition`; pull market, competition, pricing and scalability straight from `MARKET.md` | `PITCH.md`: story + speaker notes, ≤ 3 min spoken |
-| 9 | Slides (if deck) | 20 min | `frontend-slides` (animated HTML deck in the browser; can export PDF). Need PowerPoint? use your agent's `pptx` skill if it has one | the deck file (+ PDF backup) |
-| 10 | Demo video (if video) | 25 min | see **Demo video** below | `DEMO_VIDEO.md` storyboard + exported MP4 |
-| 11 | Rehearsal | 15 min | `grill-me` to get grilled like a judge; run the pitch out loud with a timer 3× | answers to the likeliest questions — always including "how do you make money?", "how big is this?", "how does it scale?", "why you and not <competitor>?"; backup screenshots/video for a live-demo failure |
+| 8 | Repo README | 15 min | see **Repo README for judges** below | `README.md` + `docs/` screenshots; repo description and topics drafted |
+| 9 | Pitch story | 10 min | `founder-pitch-deck` (structure), `pm-value-proposition`; pull market, competition, pricing and scalability straight from `MARKET.md` | `PITCH.md`: story + speaker notes, ≤ 3 min spoken |
+| 10 | Slides (if deck) | 20 min | `frontend-slides` (animated HTML deck in the browser; can export PDF). Need PowerPoint? use your agent's `pptx` skill if it has one | the deck file (+ PDF backup) |
+| 11 | Demo video (if video) | 25 min | see **Demo video** below | `DEMO_VIDEO.md` storyboard + exported MP4 |
+| 12 | Rehearsal | 15 min | `grill-me` to get grilled like a judge; run the pitch out loud with a timer 3× | answers to the likeliest questions — always including "how do you make money?", "how big is this?", "how does it scale?", "why you and not <competitor>?"; backup screenshots/video for a live-demo failure |
 
 ## Market & business model (phase 3)
 
@@ -112,16 +114,72 @@ Steps (do all of them in full mode):
 `MARKET.md` sections, in this order: ICP & beachhead · Competitors (table +
 gap) · Market size (TAM/SAM/SOM + sources) · Pricing (tiers + unit economics) ·
 Business model (lean canvas) · Scalability (growth loop + first 100 users +
-cost curve) · Sources. The pitch (phase 8) and slides (phase 9) take their
+cost curve) · Sources. The README (phase 8), pitch (phase 9) and slides (phase 10) take their
 market, competition, business-model and scale slides from this file.
 
-## Demo video (phase 10) — recorded in Recordly
+## Repo README for judges (phase 8)
+
+Judges open the GitHub repo. The README has to sell the project in the first
+screen **and** survive a judge clicking every claim. Persuasive, never inflated:
+every "it does X" links to the code, test or screenshot that proves it.
+
+### Rules
+- **Proof over adjectives.** Each capability links to where it lives (file,
+  test, screenshot, live URL). If it is mocked, seeded or on the roadmap, say so
+  in a status column — judges forgive scope, not overclaiming.
+- **First screen sells:** name, badges, one bold sentence of what it is, one
+  sentence of proof ("working software, not a mock-up: N end-to-end checks …"),
+  the live link, then the proof table.
+- **Real screenshots only**, taken from the running app with the seeded data
+  (`docs/landing.png`, `docs/app.png`, …) plus the demo video / GIF from phase 11
+  when it exists (add it to the README then).
+- **Badges** from shields.io: license, CI (only if a workflow exists and is
+  green), stack (language/runtime/framework with `logo=`), protocols or APIs
+  used, `Built at <hackathon name>`, `Live demo`. Check every badge renders —
+  some brand logos are missing from simple-icons (e.g. `openai`).
+- **Team section:** ask the user which names or handles to list. Never add real
+  names, e-mails or personal domains on your own.
+- Write the repo description (one line) and 5–8 topics too. Creating the repo,
+  pushing, or changing its visibility needs the user's explicit go-ahead.
+
+### Structure (fill from `MVP.md`, `MARKET.md`, `DEMO.md`, `DESIGN.md`)
+
+```markdown
+# <name>
+
+<badges row>
+
+**<What it is in one bold line.>** <Who it is for and the outcome, one sentence.>
+<Proof sentence: working software, N tests / checks, what is real.>
+
+> **Live:** <url> · **Demo video:** <link> · **Pitch deck:** <link>
+
+| Ready now | What is implemented | Proof |
+|---|---|---|
+| <capability> | <one line> | [file](path) · [test](path) · [screenshot](#screenshots) |
+
+## Screenshots
+## The problem          ← 3 bullets, with the real quote/number from phase 1
+## What it does         ← bold-lead bullets + one ASCII diagram of the core idea
+## Why it matters       ← when business is judged: market size, ICP, pricing, scalability (short, from MARKET.md, sources linked)
+## How it works         ← architecture: ASCII diagram + one line per folder
+## Feature status       ← table: feature · how · status (working / partial / roadmap)
+## Quickstart           ← copy-paste commands that start a seeded demo
+## Demo data            ← table of seeded users/accounts so judges can click around
+## Safety / privacy     ← risk → what the product does (only if relevant)
+## Limits (hackathon scope)  ← honest list of what is mocked, in-memory, missing
+## Prior art and how <name> differs  ← table from the competitor matrix
+## Team
+## License
+```
+
+## Demo video (phase 11) — recorded in Recordly
 
 [Recordly](https://github.com/webadderallorg/Recordly) (free, macOS / Windows / Linux) records the screen and adds auto-zooms,
 cursor polish, a styled background frame, an optional webcam bubble, trims,
 speed regions and text annotations. Do every step:
 
-### 10a. Storyboard first — write `DEMO_VIDEO.md` before anything is recorded
+### 11a. Storyboard first — write `DEMO_VIDEO.md` before anything is recorded
 
 Target **60–90 seconds**. Every second must show the product doing something.
 Use this structure and fill in the real screens/clicks from `DEMO.md`:
@@ -141,7 +199,7 @@ Rules for the storyboard:
   terminal, errors. Pre-log-in and pre-load everything.
 - Captions in the video must make sense with the sound off.
 
-### 10b. Prepare the screen (checklist — tick each)
+### 11b. Prepare the screen (checklist — tick each)
 
 - Seeded, realistic data (no lorem, no zeros, no "test123").
 - Clean browser profile or window: no bookmarks bar, no extensions, no other tabs; 1920×1080 window; zoom 110–125 % so text reads in the video.
@@ -150,7 +208,7 @@ Rules for the storyboard:
 - Mobile app: record the real device or simulator mirror at device size; enable the device frame in Recordly if available.
 - Run the full click path from `DEMO.md` once without recording.
 
-### 10c. Record and edit in Recordly
+### 11c. Record and edit in Recordly
 
 1. Record the whole flow in one take following `DEMO_VIDEO.md`; move the cursor slowly and deliberately, pause ~1 s after each click.
 2. Turn on **auto zoom suggestions**, then keep only zooms that land on the thing the voiceover talks about; add manual zoom regions where a detail matters.
@@ -178,7 +236,7 @@ Pick the branch that matches what you are building, on top of phase 5:
 - Cut scope before writing code. If a feature is not in `DEMO.md`, it does not exist.
 - Hardcode / seed data freely; judges do not see the backend.
 - The pitch follows: problem (with a real quote or number) → who → demo → market & business (when judged) → why now → ask.
-- Feature freeze at phase 7; everything after is deck, video and rehearsal.
+- Feature freeze at phase 7; everything after is README, deck, video and rehearsal.
 - The live demo always has a backup: the exported video or screenshots.
 
 ## Optional boosters — use when installed
@@ -193,8 +251,8 @@ skip). `infographic` is installed by this playbook; the rest you add yourself.
 | 1 / 2 | `brainstorm` | non-generic idea and feature variants (diverge → critique → converge) | [Dymyt-ry/claude-code-toolbelt](https://github.com/Dymyt-ry/claude-code-toolbelt#brainstorm) |
 | 6 Build (dashboard) | `dataviz` | chart colour, mark and KPI-tile rules | built into Claude apps |
 | 6 Build (landing) | `landing-page-design` | hero / above-the-fold / CTA layout rules | [inferen-sh/skills](https://github.com/inferen-sh/skills) |
-| 9 Slides | `pitch-deck-visuals` | slide-by-slide layout and data-slide rules | [inferen-sh/skills](https://github.com/inferen-sh/skills) |
-| 9 Slides | `infographic` | one strong data / process slide | installed — [claude-office-skills/skills](https://github.com/claude-office-skills/skills) |
+| 10 Slides | `pitch-deck-visuals` | slide-by-slide layout and data-slide rules | [inferen-sh/skills](https://github.com/inferen-sh/skills) |
+| 10 Slides | `infographic` | one strong data / process slide | installed — [claude-office-skills/skills](https://github.com/claude-office-skills/skills) |
 
 ## Other useful skills
 
