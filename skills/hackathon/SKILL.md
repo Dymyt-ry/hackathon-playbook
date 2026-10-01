@@ -137,6 +137,13 @@ every "it does X" links to the code, test or screenshot that proves it.
   green), stack (language/runtime/framework with `logo=`), protocols or APIs
   used, `Built at <hackathon name>`, `Live demo`. Check every badge renders —
   some brand logos are missing from simple-icons (e.g. `openai`).
+- **Diagrams in Mermaid** (` ```mermaid ` blocks — GitHub renders them as real
+  graphs): `flowchart LR` for architecture and how data/messages travel,
+  `flowchart TD` for the core idea or a hierarchy, `sequenceDiagram` for one
+  request end to end. Keep node labels short, quote labels with special
+  characters (`A["label (x)"]`), use `<br/>` for a second line, and highlight
+  the one node that matters with a `classDef`. Plain ASCII only for a short
+  folder tree.
 - **Team section:** ask the user which names or handles to list. Never add real
   names, e-mails or personal domains on your own.
 - Write the repo description (one line) and 5–8 topics too. Creating the repo,
@@ -160,9 +167,9 @@ every "it does X" links to the code, test or screenshot that proves it.
 
 ## Screenshots
 ## The problem          ← 3 bullets, with the real quote/number from phase 1
-## What it does         ← bold-lead bullets + one ASCII diagram of the core idea
+## What it does         ← bold-lead bullets + one Mermaid diagram of the core idea
 ## Why it matters       ← when business is judged: market size, ICP, pricing, scalability (short, from MARKET.md, sources linked)
-## How it works         ← architecture: ASCII diagram + one line per folder
+## How it works         ← architecture: Mermaid flowchart + one line per folder
 ## Feature status       ← table: feature · how · status (working / partial / roadmap)
 ## Quickstart           ← copy-paste commands that start a seeded demo
 ## Demo data            ← table of seeded users/accounts so judges can click around
