@@ -1,0 +1,41 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+  schedule:
+    # Weekly: catch upstream skills that moved or were renamed.
+    - cron: "0 6 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shellcheck
+        run: shellcheck install.sh scripts/check.sh
+      - name: skill checks
+        run: ./scripts/check.sh
+
+  install:
+    needs: lint
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: install into a throwaway HOME
+        run: |
+          export HOME="$RUNNER_TEMP/home" && mkdir -p "$HOME"
+          ./install.sh --agents claude,agents,codex,cursor 2>&1 | tee install.log
+          ! grep -q '^  !' install.log
+          test "$(ls "$HOME/.claude/skills" | wc -l)" -eq 41
+      - name: uninstall cleans up
+        run: |
+          export HOME="$RUNNER_TEMP/home"
+          ./install.sh --uninstall
+          test -z "$(ls -A "$HOME/.claude/skills")"
