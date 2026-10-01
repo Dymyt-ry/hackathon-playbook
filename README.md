@@ -7,7 +7,7 @@
 [![CI](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-8b5cf6.svg)](https://agentskills.io)
-[![Skills](https://img.shields.io/badge/skills_routed-41-0ea5e9.svg)](THIRD_PARTY.md)
+[![Skills](https://img.shields.io/badge/skills_routed-52-0ea5e9.svg)](THIRD_PARTY.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-f97316.svg)](#contributing)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-supported-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
@@ -46,7 +46,7 @@ three.
   can verify in two minutes.
 - **Pitch deck *and* demo video.** An HTML deck, plus a storyboarded 60–90 s
   demo video recorded and edited in [Recordly](https://github.com/webadderallorg/Recordly).
-- **41 best-in-class skills, one command.** Pulled straight from their authors
+- **52 best-in-class skills, one command.** Pulled straight from their authors
   (Anthropic, Expo, shadcn, Vercel, Emil Kowalski, Paul Bakaus, …) and linked into
   Claude Code, Cursor and Codex.
 
@@ -56,10 +56,10 @@ three.
 |:-:|---|:-:|---|---|
 | 0 | Kickoff | 5 min | — | `HACKATHON.md`: rules, judging criteria, deliverables, roles |
 | 1 | Idea check | 15 min | `founder-validate-idea`, `last30days` | problem + who + a real quote/number |
-| 2 | MVP scope | 15 min | `founder-mvp-scope` | `MVP.md`: 3–4 features, one flow |
-| 3 | Market & business | 30 / 10 min | `pm-ideal-customer-profile`, `pm-beachhead-segment`, `founder-competitor-matrix`, `pm-market-sizing`, `founder-pricing-strategy`, `pm-lean-canvas`, `pm-growth-loops`, `founder-go-to-market` | `MARKET.md`: ICP, competitors, TAM/SAM/SOM, pricing, business model, scalability |
-| 4 | Brand | 20 min | `pm-product-name`, `pm-positioning-ideas`, `pm-value-proposition`, `product-marketing`, `logo-design` | `BRAND.md` (name, positioning, tagline, voice) + logo + `DESIGN.md` |
-| 5 | UI direction | 10 min | `frontend-design`, `design-taste-frontend`, `ui-ux-pro-max`, `refero-design` | design direction locked |
+| 2 | MVP scope | 15 min | `founder-mvp-scope`, `pm-prioritize-features` | `MVP.md`: 3–4 features, one flow |
+| 3 | Market & business | 30 / 10 min | `pm-ideal-customer-profile`, `pm-beachhead-segment`, `founder-competitor-matrix`, `pm-market-sizing`, `founder-pricing-strategy`, `pm-monetization-strategy`, `pm-lean-canvas`, `pm-growth-loops`, `founder-go-to-market` | `MARKET.md`: ICP, competitors, TAM/SAM/SOM, pricing, business model, scalability |
+| 4 | Brand | 20 min | `pm-product-name`, `pm-positioning-ideas`, `pm-value-prop-statements`, `product-marketing`, `logo-design` | `BRAND.md` (name, positioning, tagline, voice) + logo + `DESIGN.md` |
+| 5 | UI direction | 10 min | `frontend-design`, `design-taste-frontend` / `hallmark`, `ui-ux-pro-max`, `refero-design` | design direction locked |
 | 6 | Build | ~1.25–1.6 h | + branch for web / dashboard / mobile (below) | happy path + `DEMO.md` |
 | 7 | Polish + freeze | 15 min | `impeccable`, `emil-design-eng`, `animate` | no more features |
 | 8 | Repo README | 15 min | badges, proof table, screenshots | judge-ready `README.md` |
@@ -74,7 +74,7 @@ three.
 
 | Building a… | Skill chain |
 |---|---|
-| 🌐 **Web app / landing page** | `frontend-design` → `design-taste-frontend` → `copywriting` → `impeccable` |
+| 🌐 **Web app / landing page** | `frontend-design` → `design-taste-frontend` or `hallmark` → `founder-landing-page` → `impeccable` |
 | 📊 **Dashboard** | `shadcn` + `ui-ux-pro-max` + `frontend-design` → `impeccable` — one hero metric, 4–6 KPI tiles, realistic seeded data |
 | 📱 **Expo / React Native app** | `expo-overview` → `expo-router` → `expo-design-system` + `expo-native-ui` / `expo-ui` → `expo-animation`, `vercel-react-native-skills`, `apple-design` |
 | 📲 **Mobile web / PWA** | web chain + `mobile-native` + `apple-design` |
@@ -162,6 +162,7 @@ This playbook is glue; the craft lives in the skills it routes to. Huge thanks t
 [shadcn](https://github.com/shadcn-ui/ui),
 [Vercel](https://github.com/vercel-labs/agent-skills),
 [Leon Lin](https://github.com/Leonxlnx/taste-skill),
+[Hassan El Mghari](https://github.com/Nutlope/hallmark),
 [Next Level Builder](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill),
 [Refero](https://github.com/referodesign/refero_skill),
 [Emotix](https://github.com/emotixco/claude-skills-founder),

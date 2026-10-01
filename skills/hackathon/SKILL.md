@@ -69,14 +69,14 @@ ticked.
 |---|---|---|---|---|
 | 0 | Kickoff | 5 min | — Ask: **event length and team size** → pick the profile and roles from **Scale to your event** and get the user's OK; **judging criteria** (product only? or also business model, market, scalability, viability?), pitch length, **deliverables: deck, demo video, live demo, or all** (default: deck + video), team roles, submission format/deadline | `HACKATHON.md` created, judging criteria written down |
 | 1 | Idea check | 15 min | `founder-validate-idea`, then `last30days` on the problem (real complaints, quotes, numbers) | one-sentence problem + who has it + 1 real quote/number for the pitch |
-| 2 | MVP scope | 15 min | `founder-mvp-scope` (must / should / won't) | `MVP.md`: 3–4 features max, one critical user flow, won't-have list |
+| 2 | MVP scope | 15 min | `founder-mvp-scope` (must / should / won't). Second opinion: `pm-prioritize-features` | `MVP.md`: 3–4 features max, one critical user flow, won't-have list |
 | 3 | Market & business | 30 min full / 10 min lite | see **Market & business model** below | `MARKET.md` |
 | 4 | Brand | 20 min | see **Brand: verbal + visual** below | `BRAND.md` + logo SVG + `DESIGN.md` (2–3 colours, 1–2 fonts) |
-| 5 | UI direction | 10 min, then during build | `frontend-design` (commit to one bold aesthetic, plan before code) + `design-taste-frontend` (anti-AI-slop rules and pre-flight check); tokens/palettes/fonts: `ui-ux-pro-max`; references: `refero-design`. Then the branch for your product type below | direction + tokens written into `DESIGN.md` |
+| 5 | UI direction | 10 min, then during build | `frontend-design` (commit to one bold aesthetic, plan before code) + `design-taste-frontend` or `hallmark`; tokens/palettes/fonts: `ui-ux-pro-max`; references: `refero-design`. Then the branch for your product type below | direction + tokens written into `DESIGN.md` |
 | 6 | Build | ~1 h 15 (full) / ~1 h 35 (lite) | normal coding, **only** the flow from `MVP.md`; seed realistic data; every UI string (headlines, buttons, empty and error states) in the `BRAND.md` voice — `copywriting` for landing/hero copy | happy path works end to end, `DEMO.md` with the exact click path |
 | 7 | Polish + freeze | 15 min | `impeccable` (polish / critique / audit); motion: `emil-design-eng`, `animate` | no feature work after this point |
 | 8 | Repo README | 15 min | see **Repo README for judges** below | `README.md` + `docs/` screenshots; repo description and topics drafted |
-| 9 | Pitch story | 10 min | `founder-pitch-deck` (structure); tagline and key messages from `BRAND.md`; market, competition, pricing and scalability straight from `MARKET.md` | `PITCH.md`: story + speaker notes, ≤ 3 min spoken |
+| 9 | Pitch story | 10 min | `founder-pitch-deck` (structure), `pm-value-proposition`; pull market, competition, pricing and scalability straight from `MARKET.md` | `PITCH.md`: story + speaker notes, ≤ 3 min spoken |
 | 10 | Slides (if deck) | 20 min | `frontend-slides` (animated HTML deck in the browser; can export PDF). Need PowerPoint? use your agent's `pptx` skill if it has one | the deck file (+ PDF backup) |
 | 11 | Demo video (if video) | 25 min | see **Demo video** below | `DEMO_VIDEO.md` storyboard + exported MP4 |
 | 12 | Rehearsal | 15 min | `grill-me` to get grilled like a judge; run the pitch out loud with a timer 3× | answers to the likeliest questions — always including "how do you make money?", "how big is this?", "how does it scale?", "why you and not <competitor>?"; backup screenshots/video for a live-demo failure |
@@ -108,8 +108,8 @@ proportionally.
 | 12 | Rehearsal | 5 | 15 | 30 | 45 | 60 |
 | — | Sleep + meals + buffer | — | — | — | 330 | 760 |
 
-1. 24 h / 48 h: add real user validation — `founder-user-interviews` (Mom Test
-   script + analysis), talk to 3–5 people (other teams, mentors, online
+1. 24 h / 48 h: add real user validation — `founder-user-interviews` or
+   `pm-interview-script`, talk to 3–5 people (other teams, mentors, online
    communities), and record what they said in `IDEA.md`.
 2. 2 h: market runs **lite** regardless of criteria (ICP, 3 competitors, one
    pricing table) — that is this profile's definition, written in `HACKATHON.md`.
@@ -176,8 +176,8 @@ Steps (do all of them in full mode):
    bottom-up (customers × price). Every number gets a source link or is labelled
    as an assumption with its arithmetic shown. Never invent a market figure.
 4. **Pricing.** `founder-pricing-strategy` (3 tiers with real prices and limits,
-   anchored to sourced competitor prices, unit economics; it compares the
-   pricing models itself).
+   anchored to sourced competitor prices, unit economics). Second opinion on the
+   revenue model: `pm-monetization-strategy`.
 5. **Business model.** `pm-lean-canvas` (one page: problem, segments, UVP,
    channels, revenue, costs, unfair advantage).
 6. **Scalability.** `pm-growth-loops` (which loop makes it grow without linear
@@ -201,9 +201,8 @@ across the UI, README, pitch and video. Do every step:
 2. **Positioning** — `pm-positioning-ideas`, using the competitor matrix from
    `MARKET.md`: one statement — *For <ICP> who <pain>, <name> is the <category>
    that <key benefit>, unlike <alternative>.*
-3. **Value proposition, tagline + key messages** — `pm-value-proposition`
-   (who · why · what before · how · what after · alternatives), then condense it
-   into a tagline (≤ 8 words) and the 3 messages every surface repeats.
+3. **Tagline + key messages** — `pm-value-prop-statements`: a tagline (≤ 8
+   words) and the 3 messages every surface repeats.
 4. **Voice & tone** — `product-marketing` to write the product context, then
    fill the voice section of `BRAND.md`:
    - 3 traits as *we are X, not Y* (e.g. "confident, not arrogant");
@@ -337,7 +336,7 @@ Rules for the storyboard:
 
 Pick the branch that matches what you are building, on top of phase 5:
 
-- **Web / landing page:** `frontend-design` → `design-taste-frontend` → `copywriting` (landing copy in the `BRAND.md` voice) → `impeccable`.
+- **Web / landing page:** `frontend-design` → `design-taste-frontend` or `hallmark` → `founder-landing-page` (copy, section by section) → `impeccable`.
 - **Dashboard / admin / data app:** `shadcn` (components + blocks, charts via shadcn charts) + `ui-ux-pro-max` (dashboard palettes, density, chart types) + `frontend-design` for a non-default look. Rules: one hero metric per view, max 4–6 KPI tiles, real-looking seeded data (never lorem / 0s), one accent colour for "the number that matters", consistent chart colours across the page. Finish with `impeccable`.
 - **Mobile app (Expo / React Native):** `expo-overview` → `expo-router` (navigation) → `expo-design-system` + `expo-native-ui` / `expo-ui` (native look, not a shrunk website) → `expo-animation` for motion and haptics; `vercel-react-native-skills` for performance/best practice; `apple-design` for iOS-quality feel. Demo it on a real phone via Expo Go.
 - **Mobile web / PWA (a web app demoed on a phone):** web branch + `mobile-native` (100vh bug, notch, tap highlight, input zoom) + `apple-design`.
@@ -345,7 +344,6 @@ Pick the branch that matches what you are building, on top of phase 5:
 
 ## Rules of thumb
 
-- One skill per job: never load two skills for the same output; the playbook names the one to use.
 - One voice everywhere: if a sentence would not fit `BRAND.md`, rewrite it.
 - Cut scope before writing code. If a feature is not in `DEMO.md`, it does not exist.
 - Hardcode / seed data freely; judges do not see the backend.
@@ -371,5 +369,6 @@ skip). `infographic` is installed by this playbook; the rest you add yourself.
 ## Other useful skills
 
 - Research: `last30days` (Reddit, X, YouTube, HN, GitHub, Polymarket; TikTok / Instagram with a ScrapeCreators key).
-- Ideas when stuck: `pm-brainstorm-ideas-new`.
+- More market framing: `pm-startup-canvas`, `pm-business-model` (full Business Model Canvas).
+- Ideas when stuck: `pm-brainstorm-ideas-new`, `pm-brainstorm-experiments-new`.
 - Social launch post: `social-content`.
