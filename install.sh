@@ -93,6 +93,10 @@ phuryn/pm-skills|pm-product-strategy/skills/lean-canvas|pm-lean-canvas|pm
 phuryn/pm-skills|pm-product-strategy/skills/startup-canvas|pm-startup-canvas|pm
 phuryn/pm-skills|pm-go-to-market/skills/ideal-customer-profile|pm-ideal-customer-profile|pm
 phuryn/pm-skills|pm-go-to-market/skills/beachhead-segment|pm-beachhead-segment|pm
+phuryn/pm-skills|pm-go-to-market/skills/growth-loops|pm-growth-loops|pm
+phuryn/pm-skills|pm-market-research/skills/market-sizing|pm-market-sizing|pm
+phuryn/pm-skills|pm-product-strategy/skills/monetization-strategy|pm-monetization-strategy|pm
+phuryn/pm-skills|pm-product-strategy/skills/business-model|pm-business-model|pm
 mvanhorn/last30days-skill|skills/last30days|last30days|none
 kaankiziltug/logo-design-skill|skills/logo-design|logo-design|none
 anthropics/skills|skills/frontend-design|frontend-design|none

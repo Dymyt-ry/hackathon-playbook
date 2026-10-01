@@ -7,7 +7,7 @@ and stays under its own license. Nothing below is redistributed from here.
 | Skills (installed name) | Source | License |
 |---|---|---|
 | `founder-validate-idea`, `founder-mvp-scope`, `founder-pitch-deck`, `founder-competitor-matrix`, `founder-landing-page`, `founder-go-to-market`, `founder-pricing-strategy`, `founder-product-brief`, `founder-persona-gen` | [emotixco/claude-skills-founder](https://github.com/emotixco/claude-skills-founder) | MIT |
-| `pm-prioritize-features`, `pm-brainstorm-ideas-new`, `pm-brainstorm-experiments-new`, `pm-value-proposition`, `pm-lean-canvas`, `pm-startup-canvas`, `pm-ideal-customer-profile`, `pm-beachhead-segment` | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | MIT |
+| `pm-prioritize-features`, `pm-brainstorm-ideas-new`, `pm-brainstorm-experiments-new`, `pm-value-proposition`, `pm-lean-canvas`, `pm-startup-canvas`, `pm-ideal-customer-profile`, `pm-beachhead-segment`, `pm-growth-loops`, `pm-market-sizing`, `pm-monetization-strategy`, `pm-business-model` | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | MIT |
 | `last30days` | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | MIT |
 | `logo-design` | [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) | MIT (its reference library contains third-party logos, which are trademarks of their owners — see the upstream TRADEMARKS.md) |
 | `frontend-design` | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/frontend-design) | Apache-2.0 (LICENSE.txt in the skill folder) |
