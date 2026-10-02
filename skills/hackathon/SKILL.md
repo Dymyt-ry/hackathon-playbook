@@ -1,6 +1,6 @@
 ---
 name: hackathon
-description: Strict phase-by-phase playbook for short hackathons (a few hours) where the pitch, demo and look matter more than depth. Walks idea → MVP scope → market & business model (sizing, competitors, pricing, scalability) → brand (name, positioning, voice, logo) → UI → build → judge-ready GitHub README → pitch deck and/or demo video (recorded in Recordly) → rehearsal, scales to the event length (2 h to 48 h) and team size (solo to 5+ with parallel tracks and a safe git workflow: worktrees, PRs, an always-demoable main), names the exact installed skill for each phase, and tracks progress in HACKATHON.md so no step gets silently skipped. Use when the user mentions a hackathon, a demo day, a time-boxed build, "what should we build", "cut the scope", "market research", "pricing", "business model", "brand voice", "make the pitch", "README", "demo video", "merge", "PR", "branch", or asks which skill to use for startup/pitch/presentation work.
+description: Strict phase-by-phase playbook for short hackathons (a few hours) where the pitch, demo and look matter more than depth. Walks idea → market check (ICP, competitors, market size → go / pivot / kill) → MVP scope → business model (pricing, lean canvas, scalability) → brand (name, positioning, voice, logo) → UI → build → judge-ready GitHub README → pitch deck and/or demo video (recorded in Recordly) → rehearsal, scales to the event length (2 h to 48 h) and team size (solo to 5+ with parallel tracks and a safe git workflow: worktrees, PRs, an always-demoable main), names the exact installed skill for each phase, and tracks progress in HACKATHON.md so no step gets silently skipped. Use when the user mentions a hackathon, a demo day, a time-boxed build, "what should we build", "cut the scope", "market research", "pricing", "business model", "brand voice", "make the pitch", "README", "demo video", "merge", "PR", "branch", or asks which skill to use for startup/pitch/presentation work.
 ---
 
 # Hackathon playbook
@@ -24,7 +24,7 @@ rules exist to stop exactly that.
    seems to know already. Only the user can skip or reorder, and only by saying
    so explicitly ("skip the logo", "no video", "go straight to build").
 3. **Running behind is not a reason to cut.** If a phase is over its timebox,
-   say so in one line with the numbers ("phase 6 is 20 min over, 1 h 10 left")
+   say so in one line with the numbers ("phase 7 is 20 min over, 1 h 10 left")
    and **ask** which phase to cut or shorten. Wait for the answer. Until then,
    keep doing the current phase properly.
 4. **Every phase ends with its output on disk** (the Output column below) and a
@@ -45,17 +45,18 @@ Roles: <name/handle → role>          (owner column below uses these)
 
 - [ ] 0. Kickoff — rules, judging criteria, deliverables, profile, roles      @owner
 - [ ] 1. Idea check — <one-sentence problem>
-- [ ] 2. MVP scope — <3–4 features, critical flow>
-- [ ] 3. Market & business — depth: full ☐ lite ☐ (from judging criteria)
-- [ ] 4. Brand — BRAND.md (name, positioning, voice) + logo + DESIGN.md
-- [ ] 5. UI direction — DESIGN.md direction locked
-- [ ] 6. Build — happy path works end to end
-- [ ] 7. Polish + feature freeze
-- [ ] 8. Repo README — badges, proof table, screenshots
-- [ ] 9. Pitch story
-- [ ] 10. Slides           (if deck)
-- [ ] 11. Demo video       (if video)
-- [ ] 12. Rehearsal
+- [ ] 2. Market check — depth: full ☐ lite ☐ · verdict: go ☐ pivot ☐ kill ☐ (user's call)
+- [ ] 3. MVP scope — <3–4 features, critical flow>
+- [ ] 4. Business model — pricing, lean canvas, scalability
+- [ ] 5. Brand — BRAND.md (name, positioning, voice) + logo + DESIGN.md
+- [ ] 6. UI direction — DESIGN.md direction locked
+- [ ] 7. Build — happy path works end to end
+- [ ] 8. Polish + feature freeze
+- [ ] 9. Repo README — badges, proof table, screenshots
+- [ ] 10. Pitch story
+- [ ] 11. Slides           (if deck)
+- [ ] 12. Demo video       (if video)
+- [ ] 13. Rehearsal
 Skipped by user: <phase — user's words — time>
 ```
 
@@ -69,17 +70,18 @@ ticked.
 |---|---|---|---|---|
 | 0 | Kickoff | 5 min (+10 git setup for teams) | — Ask: **event length and team size** → pick the profile and roles from **Scale to your event** and get the user's OK; **judging criteria** (product only? or also business model, market, scalability, viability?), pitch length, **deliverables: deck, demo video, live demo, or all** (default: deck + video), team roles, submission format/deadline | `HACKATHON.md` created, judging criteria written down |
 | 1 | Idea check | 15 min | `founder-validate-idea`, then `last30days` on the problem (real complaints, quotes, numbers) | one-sentence problem + who has it + 1 real quote/number for the pitch |
-| 2 | MVP scope | 15 min | `founder-mvp-scope` (must / should / won't). Second opinion: `pm-prioritize-features` | `MVP.md`: 3–4 features max, one critical user flow, won't-have list |
-| 3 | Market & business | 30 min full / 10 min lite | see **Market & business model** below | `MARKET.md` |
-| 4 | Brand | 20 min | see **Brand: verbal + visual** below | `BRAND.md` + logo SVG + `DESIGN.md` (2–3 colours, 1–2 fonts) |
-| 5 | UI direction | 10 min, then during build | `frontend-design` (commit to one bold aesthetic, plan before code) + `design-taste-frontend` or `hallmark`; tokens/palettes/fonts: `ui-ux-pro-max`; references: `refero-design`. Then the branch for your product type below | direction + tokens written into `DESIGN.md` |
-| 6 | Build | ~1 h 15 (full) / ~1 h 35 (lite) | normal coding, **only** the flow from `MVP.md`; seed realistic data; every UI string (headlines, buttons, empty and error states) in the `BRAND.md` voice — `copywriting` for landing/hero copy | happy path works end to end, `DEMO.md` with the exact click path |
-| 7 | Polish + freeze | 15 min | `impeccable` (polish / critique / audit); motion: `emil-design-eng`, `animate` | no feature work after this point |
-| 8 | Repo README | 15 min | see **Repo README for judges** below | `README.md` + `docs/` screenshots; repo description and topics drafted |
-| 9 | Pitch story | 10 min | `founder-pitch-deck` (structure), `pm-value-proposition`; pull market, competition, pricing and scalability straight from `MARKET.md` | `PITCH.md`: story + speaker notes, ≤ 3 min spoken |
-| 10 | Slides (if deck) | 20 min | `frontend-slides` (animated HTML deck in the browser; can export PDF). Need PowerPoint? use your agent's `pptx` skill if it has one | the deck file (+ PDF backup) |
-| 11 | Demo video (if video) | 25 min | see **Demo video** below | `DEMO_VIDEO.md` storyboard + exported MP4 |
-| 12 | Rehearsal | 15 min | `grill-me` to get grilled like a judge; run the pitch out loud with a timer 3× | answers to the likeliest questions — always including "how do you make money?", "how big is this?", "how does it scale?", "why you and not <competitor>?"; backup screenshots/video for a live-demo failure |
+| 2 | Market check | 15 min full / 5 min lite | see **Market check** below — ends with the user's **go / pivot / kill** decision | `MARKET.md` (ICP, competitors, market size, verdict) |
+| 3 | MVP scope | 15 min | `founder-mvp-scope` (must / should / won't). Second opinion: `pm-prioritize-features`. Scope for the ICP and the gap found in phase 2 | `MVP.md`: 3–4 features max, one critical user flow, won't-have list |
+| 4 | Business model | 15 min full / 5 min lite | see **Business model** below | pricing, business model and scalability added to `MARKET.md` |
+| 5 | Brand | 20 min | see **Brand: verbal + visual** below | `BRAND.md` + logo SVG + `DESIGN.md` (2–3 colours, 1–2 fonts) |
+| 6 | UI direction | 10 min, then during build | `frontend-design` (commit to one bold aesthetic, plan before code) + `design-taste-frontend` or `hallmark`; tokens/palettes/fonts: `ui-ux-pro-max`; references: `refero-design`. Then the branch for your product type below | direction + tokens written into `DESIGN.md` |
+| 7 | Build | ~1 h 15 (full) / ~1 h 35 (lite) | normal coding, **only** the flow from `MVP.md`; seed realistic data; every UI string (headlines, buttons, empty and error states) in the `BRAND.md` voice — `copywriting` for landing/hero copy | happy path works end to end, `DEMO.md` with the exact click path |
+| 8 | Polish + freeze | 15 min | `impeccable` (polish / critique / audit); motion: `emil-design-eng`, `animate` | no feature work after this point |
+| 9 | Repo README | 15 min | see **Repo README for judges** below | `README.md` + `docs/` screenshots; repo description and topics drafted |
+| 10 | Pitch story | 10 min | `founder-pitch-deck` (structure), `pm-value-proposition`; pull market, competition, pricing and scalability straight from `MARKET.md` | `PITCH.md`: story + speaker notes, ≤ 3 min spoken |
+| 11 | Slides (if deck) | 20 min | `frontend-slides` (animated HTML deck in the browser; can export PDF). Need PowerPoint? use your agent's `pptx` skill if it has one | the deck file (+ PDF backup) |
+| 12 | Demo video (if video) | 25 min | see **Demo video** below | `DEMO_VIDEO.md` storyboard + exported MP4 |
+| 13 | Rehearsal | 15 min | `grill-me` to get grilled like a judge; run the pitch out loud with a timer 3× | answers to the likeliest questions — always including "how do you make money?", "how big is this?", "how does it scale?", "why you and not <competitor>?"; backup screenshots/video for a live-demo failure |
 
 ## Scale to your event
 
@@ -95,25 +97,27 @@ proportionally.
 |---|---|---|---|---|---|---|
 | 0 | Kickoff | 5 | 5 | 10 | 15 | 20 |
 | 1 | Idea check | 10 | 15 | 25 | 90 ¹ | 180 ¹ |
-| 2 | MVP scope | 10 | 15 | 20 | 30 | 45 |
-| 3 | Market & business | 5 ² | 30 / 10 | 45 | 75 | 120 |
-| 4 | Brand | 10 ³ | 20 | 35 | 60 | 90 |
-| 5 | UI direction | 5 | 10 | 20 | 30 | 60 |
-| 6 | Build | 45 | 75 | 160 | 540 ⁴ | 1200 ⁴ |
-| 7 | Polish + freeze | 5 | 15 | 30 | 60 | 120 |
-| 8 | Repo README | 5 ⁵ | 15 | 25 | 45 | 60 |
-| 9 | Pitch story | 5 | 10 | 20 | 30 | 45 |
-| 10 | Slides | 10 ⁶ | 20 | 30 | 45 | 60 |
-| 11 | Demo video | ⁶ | 25 | 30 | 45 | 60 |
-| 12 | Rehearsal | 5 | 15 | 30 | 45 | 60 |
+| 2 | Market check | 5 ² | 15 / 5 | 25 | 40 | 60 |
+| 3 | MVP scope | 10 | 15 | 20 | 30 | 45 |
+| 4 | Business model | 5 ² | 15 / 5 | 20 | 35 | 60 |
+| 5 | Brand | 10 ³ | 20 | 35 | 60 | 90 |
+| 6 | UI direction | 5 | 10 | 20 | 30 | 60 |
+| 7 | Build | 40 | 75 / 95 | 160 | 540 ⁴ | 1200 ⁴ |
+| 8 | Polish + freeze | 5 | 15 | 30 | 60 | 120 |
+| 9 | Repo README | 5 ⁵ | 15 | 25 | 45 | 60 |
+| 10 | Pitch story | 5 | 10 | 20 | 30 | 45 |
+| 11 | Slides | 10 ⁶ | 20 | 30 | 45 | 60 |
+| 12 | Demo video | ⁶ | 25 | 30 | 45 | 60 |
+| 13 | Rehearsal | 5 | 15 | 30 | 45 | 60 |
 | — | Sleep + meals + buffer | — | — | — | 330 | 760 |
 
 1. 24 h / 48 h: add real user validation — `founder-user-interviews` is the
    main skill (Mom Test script, screening, analysis of the answers); add
    `pm-interview-script` for extra Jobs-to-be-Done probing questions. Talk to 3–5 people (other teams, mentors, online
    communities), and record what they said in `IDEA.md`.
-2. 2 h: market runs **lite** regardless of criteria (ICP, 3 competitors, one
-   pricing table) — that is this profile's definition, written in `HACKATHON.md`.
+2. 2 h: market check and business model run **lite** regardless of criteria
+   (ICP, 3 competitors, verdict; one pricing table) — that is this profile's
+   definition, written in `HACKATHON.md`.
 3. 2 h: name, one-line positioning, tagline, 3 voice traits, a wordmark logo.
 4. 24 h / 48 h: build in blocks of ~3 h, each ending in a **checkpoint** — the
    happy path runs end to end, commit, tick a line in `HACKATHON.md`. Deploy to a
@@ -124,27 +128,28 @@ proportionally.
 
 ### By team size
 
-Same phases, split into tracks that run **in parallel** after the MVP scope.
-Every track owns its phases end to end; nobody redoes another track's output.
+Phases 0–3 are done **together** — everyone needs the same idea, market verdict
+and MVP. After that the phases split into tracks that run **in parallel**. Every
+track owns its phases end to end; nobody redoes another track's output.
 
 | Team | Roles and the phases they own |
 |---|---|
 | **Solo** | You do every phase in order, as in the table above. |
-| **2** | **Builder** (also the git setup in phase 0): 5, 6, 7, tech parts of 8 (quickstart, architecture, screenshots). **Story:** 4 (visual first, so the builder has `DESIGN.md` early), 3, prose of 8, 9, 10, 11. |
-| **3–4** | **Builder ×1–2** (one of them does the git setup in phase 0; split the critical flow: front / back, or screen by screen): 6, 7. **Designer:** 4 visual, 5, UI polish in 7, screenshots, 11. **Business & pitch:** 3, 4 verbal, prose of 8, 9, 10. |
-| **5+** | As 3–4, plus a **Captain** who owns `HACKATHON.md`, the clock, merges and the final submission, and a **Demo owner** who owns `DEMO.md`, 11 and the backup video. Never more than one person per surface (README, deck, video). |
+| **2** | **Builder** (also the git setup in phase 0): 6, 7, 8, tech parts of 9 (quickstart, architecture, screenshots). **Story:** 5 (visual first, so the builder has `DESIGN.md` early), 4, prose of 9, 10, 11, 12. |
+| **3–4** | **Builder ×1–2** (one of them does the git setup in phase 0; split the critical flow: front / back, or screen by screen): 7, 8. **Designer:** 5 visual, 6, UI polish in 8, screenshots, 12. **Business & pitch:** 4, 5 verbal, prose of 9, 10, 11. |
+| **5+** | As 3–4, plus a **Captain** who owns `HACKATHON.md`, the clock, merges and the final submission, and a **Demo owner** who owns `DEMO.md`, 12 and the backup video. Never more than one person per surface (README, deck, video). |
 
 **Sync points (everyone, ≤ 10 min each):**
-- **S1 after phase 2** — everyone agrees on the critical flow and `MVP.md`.
-- **S2 halfway through the build** — does the happy path run end to end? Market
+- **S1 after phase 3** — everyone agrees on the market verdict, the critical flow and `MVP.md`.
+- **S2 halfway through the build** — does the happy path run end to end? Business
   and brand findings that change the product land here, not later.
-- **S3 feature freeze (phase 7)** — UI is final; screenshots and video start now.
-- **S4 rehearsal (phase 12)** — the whole team, the real pitch, a timer.
+- **S3 feature freeze (phase 8)** — UI is final; screenshots and video start now.
+- **S4 rehearsal (phase 13)** — the whole team, the real pitch, a timer.
 
 With parallel tracks the build gets the time the other phases would have
 taken: README prose, pitch and slides are written during the build, so the
 freeze moves to just before video + rehearsal. In a team of 2+ at 4.5 h: build
-0:55–3:35 (~2 h 30 after the S2 check), polish + freeze 3:35–3:50, demo video
+1:10–3:35 (~2 h 15 after the S2 check), polish + freeze 3:35–3:50, demo video
 3:50–4:15, rehearsal 4:15–4:30.
 
 **Git for teams of 2+:** follow **Team git workflow** below from phase 0 on —
@@ -187,25 +192,22 @@ working demo. These rules are part of the plan, not optional hygiene.
 - Tag every known-good `main`: `demo-ok-<HHMM>`. The latest tag is your
   fallback for the live demo.
 
-**From feature freeze (phase 7):**
+**From feature freeze (phase 8):**
 - Only the Captain merges, only fixes, each one re-checked on the demo path.
 - Tag `demo-final`; deploy, screenshot and record the video **from that tag**.
 
-## Market & business model (phase 3)
+## Market check (phase 2) — before the MVP
 
-Many judges score more than the product: market, business model, scalability,
-viability. This phase produces the evidence for those slides **before** the build
-eats the clock.
+There is no point scoping an MVP for a product the market will not carry. This
+phase decides whether the idea goes on, and it gives the scope its target.
 
 **Depth comes from the judging criteria recorded in phase 0 — never from your
 own sense of time:**
-- **Full** (30 min) — the criteria mention business, market, scalability,
-  viability, impact or investors, **or the criteria are unknown**.
-- **Lite** (10 min: steps 1, 2 and 4 only, three competitors, one pricing tier
-  table) — only when the user or the official rules say judging is product /
-  tech only. Write the reason next to the checkbox in `HACKATHON.md`.
-
-Steps (do all of them in full mode):
+- **Full** — the criteria mention business, market, scalability, viability,
+  impact or investors, **or the criteria are unknown**.
+- **Lite** (steps 1, 2 and 4 only, three competitors) — only when the user or
+  the official rules say judging is product / tech only. Write the reason next
+  to the checkbox in `HACKATHON.md`. The same depth applies to phase 4.
 
 1. **Who pays — ICP and beachhead.** `pm-ideal-customer-profile`, then
    `pm-beachhead-segment`: the first narrow segment you could win, and why them.
@@ -213,24 +215,41 @@ Steps (do all of them in full mode):
    feature matrix, the gap you own). Add `last30days` on the top competitors to
    find what their users complain about — that is your positioning line.
 3. **Market size.** `pm-market-sizing`: TAM / SAM / SOM, top-down **and**
-   bottom-up (customers × price). Every number gets a source link or is labelled
-   as an assumption with its arithmetic shown. Never invent a market figure.
-4. **Pricing.** `founder-pricing-strategy` (3 tiers with real prices and limits,
-   anchored to sourced competitor prices, unit economics). Second opinion on the
-   revenue model: `pm-monetization-strategy`.
-5. **Business model.** `pm-lean-canvas` (one page: problem, segments, UVP,
+   bottom-up (customers × a realistic price). Every number gets a source link or
+   is labelled as an assumption with its arithmetic shown. Never invent a figure.
+4. **Verdict — the user decides.** Present **go / pivot / kill** with the
+   evidence: the phase 1 score, who pays, the gap against competitors, the
+   market size. Recommend one, then **ask** and wait.
+   - **Go** → phase 3, scoping for the ICP and the gap found here.
+   - **Pivot** (new segment, angle or problem) or **kill** (new idea) → back to
+     phase 1 once. The time comes out of the build: tell the user the new build
+     time before they choose.
+   You never pick the verdict yourself and never skip asking.
+
+`MARKET.md` after phase 2: ICP & beachhead · Competitors (table + gap) · Market
+size (TAM/SAM/SOM + sources) · Verdict (decision + why) · Sources.
+
+## Business model (phase 4) — after the MVP
+
+Pricing tiers need the feature set, and a growth loop needs to know how the
+product works — so this comes after `MVP.md` exists. Same depth as phase 2
+(lite: step 1 only, one pricing table).
+
+1. **Pricing.** `founder-pricing-strategy` (3 tiers with real prices and limits
+   built from the MVP's features, anchored to the competitor prices from phase 2,
+   unit economics). Second opinion on the revenue model: `pm-monetization-strategy`.
+2. **Business model.** `pm-lean-canvas` (one page: problem, segments, UVP,
    channels, revenue, costs, unfair advantage).
-6. **Scalability.** `pm-growth-loops` (which loop makes it grow without linear
+3. **Scalability.** `pm-growth-loops` (which loop makes it grow without linear
    effort) + `founder-go-to-market` (the first 100 users: named communities and
    channels). Add one line on how costs scale with users.
 
-`MARKET.md` sections, in this order: ICP & beachhead · Competitors (table +
-gap) · Market size (TAM/SAM/SOM + sources) · Pricing (tiers + unit economics) ·
-Business model (lean canvas) · Scalability (growth loop + first 100 users +
-cost curve) · Sources. The README (phase 8), pitch (phase 9) and slides (phase 10) take their
-market, competition, business-model and scale slides from this file.
+`MARKET.md` gains: Pricing (tiers + unit economics) · Business model (lean
+canvas) · Scalability (growth loop + first 100 users + cost curve). The README
+(phase 9), pitch (phase 10) and slides (phase 11) take their market,
+competition, business-model and scale slides from this file.
 
-## Brand: verbal + visual (phase 4)
+## Brand: verbal + visual (phase 5)
 
 A logo is not a brand. Judges remember a name, one line and a consistent voice
 across the UI, README, pitch and video. Do every step:
@@ -258,10 +277,10 @@ across the UI, README, pitch and video. Do every step:
 
 `BRAND.md` sections: Name · Positioning · Tagline · Key messages · Voice
 (traits, use/avoid, sample lines, tone per surface). Every later phase that
-writes words — UI copy (6), README (8), pitch (9), slides (10), video
-voiceover and captions (11) — follows it.
+writes words — UI copy (7), README (9), pitch (10), slides (11), video
+voiceover and captions (12) — follows it.
 
-## Repo README for judges (phase 8)
+## Repo README for judges (phase 9)
 
 Judges open the GitHub repo. The README has to sell the project in the first
 screen **and** survive a judge clicking every claim. Persuasive, never inflated:
@@ -275,7 +294,7 @@ every "it does X" links to the code, test or screenshot that proves it.
   sentence of proof ("working software, not a mock-up: N end-to-end checks …"),
   the live link, then the proof table.
 - **Real screenshots only**, taken from the running app with the seeded data
-  (`docs/landing.png`, `docs/app.png`, …) plus the demo video / GIF from phase 11
+  (`docs/landing.png`, `docs/app.png`, …) plus the demo video / GIF from phase 12
   when it exists (add it to the README then).
 - **Badges** from shields.io: license, CI (only if a workflow exists and is
   green), stack (language/runtime/framework with `logo=`), protocols or APIs
@@ -324,13 +343,13 @@ every "it does X" links to the code, test or screenshot that proves it.
 ## License
 ```
 
-## Demo video (phase 11) — recorded in Recordly
+## Demo video (phase 12) — recorded in Recordly
 
 [Recordly](https://github.com/webadderallorg/Recordly) (free, macOS / Windows / Linux) records the screen and adds auto-zooms,
 cursor polish, a styled background frame, an optional webcam bubble, trims,
 speed regions and text annotations. Do every step:
 
-### 11a. Storyboard first — write `DEMO_VIDEO.md` before anything is recorded
+### 12a. Storyboard first — write `DEMO_VIDEO.md` before anything is recorded
 
 Target **60–90 seconds**. Every second must show the product doing something.
 Use this structure and fill in the real screens/clicks from `DEMO.md`:
@@ -350,7 +369,7 @@ Rules for the storyboard:
   terminal, errors. Pre-log-in and pre-load everything.
 - Captions in the video must make sense with the sound off.
 
-### 11b. Prepare the screen (checklist — tick each)
+### 12b. Prepare the screen (checklist — tick each)
 
 - Seeded, realistic data (no lorem, no zeros, no "test123").
 - Clean browser profile or window: no bookmarks bar, no extensions, no other tabs; 1920×1080 window; zoom 110–125 % so text reads in the video.
@@ -359,7 +378,7 @@ Rules for the storyboard:
 - Mobile app: record the real device or simulator mirror at device size; enable the device frame in Recordly if available.
 - Run the full click path from `DEMO.md` once without recording.
 
-### 11c. Record and edit in Recordly
+### 12c. Record and edit in Recordly
 
 1. Record the whole flow in one take following `DEMO_VIDEO.md`; move the cursor slowly and deliberately, pause ~1 s after each click.
 2. Turn on **auto zoom suggestions**, then keep only zooms that land on the thing the voiceover talks about; add manual zoom regions where a detail matters.
@@ -374,7 +393,7 @@ Rules for the storyboard:
 
 ## UI by product type
 
-Pick the branch that matches what you are building, on top of phase 5:
+Pick the branch that matches what you are building, on top of phase 6:
 
 - **Web / landing page:** `frontend-design` → `design-taste-frontend` or `hallmark` → `founder-landing-page` (copy, section by section) → `impeccable`.
 - **Dashboard / admin / data app:** `shadcn` (components + blocks, charts via shadcn charts) + `ui-ux-pro-max` (dashboard palettes, density, chart types) + `frontend-design` for a non-default look. Rules: one hero metric per view, max 4–6 KPI tiles, real-looking seeded data (never lorem / 0s), one accent colour for "the number that matters", consistent chart colours across the page. Finish with `impeccable`.
@@ -388,7 +407,7 @@ Pick the branch that matches what you are building, on top of phase 5:
 - Cut scope before writing code. If a feature is not in `DEMO.md`, it does not exist.
 - Hardcode / seed data freely; judges do not see the backend.
 - The pitch follows: problem (with a real quote or number) → who → demo → market & business (when judged) → why now → ask.
-- Feature freeze at phase 7; everything after is README, deck, video and rehearsal.
+- Feature freeze at phase 8; everything after is README, deck, video and rehearsal.
 - The live demo always has a backup: the exported video or screenshots.
 
 ## Optional boosters — use when installed
@@ -399,12 +418,12 @@ skip). `infographic` is installed by this playbook; the rest you add yourself.
 
 | Phase | Skill | Adds | Get it |
 |---|---|---|---|
-| 1 Idea check, 3 Market | `research` | deep, cited research in parallel with `last30days` (market size, competitors) | any deep-research skill you use |
-| 1 / 2 | `brainstorm` | non-generic idea and feature variants (diverge → critique → converge) | [Dymyt-ry/claude-code-toolbelt](https://github.com/Dymyt-ry/claude-code-toolbelt#brainstorm) |
-| 6 Build (dashboard) | `dataviz` | chart colour, mark and KPI-tile rules | built into Claude apps |
-| 6 Build (landing) | `landing-page-design` | hero / above-the-fold / CTA layout rules | [inferen-sh/skills](https://github.com/inferen-sh/skills) |
-| 10 Slides | `pitch-deck-visuals` | slide-by-slide layout and data-slide rules | [inferen-sh/skills](https://github.com/inferen-sh/skills) |
-| 10 Slides | `infographic` | one strong data / process slide | installed — [claude-office-skills/skills](https://github.com/claude-office-skills/skills) |
+| 1 Idea check, 2 Market check | `research` | deep, cited research in parallel with `last30days` (market size, competitors) | any deep-research skill you use |
+| 1 / 3 | `brainstorm` | non-generic idea and feature variants (diverge → critique → converge) | [Dymyt-ry/claude-code-toolbelt](https://github.com/Dymyt-ry/claude-code-toolbelt#brainstorm) |
+| 7 Build (dashboard) | `dataviz` | chart colour, mark and KPI-tile rules | built into Claude apps |
+| 7 Build (landing) | `landing-page-design` | hero / above-the-fold / CTA layout rules | [inferen-sh/skills](https://github.com/inferen-sh/skills) |
+| 11 Slides | `pitch-deck-visuals` | slide-by-slide layout and data-slide rules | [inferen-sh/skills](https://github.com/inferen-sh/skills) |
+| 11 Slides | `infographic` | one strong data / process slide | installed — [claude-office-skills/skills](https://github.com/claude-office-skills/skills) |
 
 ## Other useful skills
 

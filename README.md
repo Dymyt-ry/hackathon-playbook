@@ -30,7 +30,7 @@ three.
 ## ✨ What you get
 
 - **One skill that runs the whole day.** Say *"hackathon"* and the agent walks
-  thirteen phases in order, loading the right specialist skill for each one.
+  fourteen phases in order, loading the right specialist skill for each one.
 - **An execution contract.** The agent may not skip, merge or shorten a phase
   on its own. If it falls behind it tells you the numbers and **asks** what to
   cut. Progress is tracked in `HACKATHON.md`, so a skipped step is visible.
@@ -54,21 +54,22 @@ three.
 
 | # | Phase | Time* | Skills the agent loads | Output |
 |:-:|---|:-:|---|---|
-| 0 | Kickoff | 5 min | — | `HACKATHON.md`: rules, judging criteria, deliverables, roles |
+| 0 | Kickoff | 5 min | — | `HACKATHON.md`: rules, judging criteria, deliverables, profile, roles |
 | 1 | Idea check | 15 min | `founder-validate-idea`, `last30days` | problem + who + a real quote/number |
-| 2 | MVP scope | 15 min | `founder-mvp-scope`, `pm-prioritize-features` | `MVP.md`: 3–4 features, one flow |
-| 3 | Market & business | 30 / 10 min | `pm-ideal-customer-profile`, `pm-beachhead-segment`, `founder-competitor-matrix`, `pm-market-sizing`, `founder-pricing-strategy`, `pm-monetization-strategy`, `pm-lean-canvas`, `pm-growth-loops`, `founder-go-to-market` | `MARKET.md`: ICP, competitors, TAM/SAM/SOM, pricing, business model, scalability |
-| 4 | Brand | 20 min | `pm-product-name`, `pm-positioning-ideas`, `pm-value-prop-statements`, `product-marketing`, `logo-design` | `BRAND.md` (name, positioning, tagline, voice) + logo + `DESIGN.md` |
-| 5 | UI direction | 10 min | `frontend-design`, `design-taste-frontend` / `hallmark`, `ui-ux-pro-max`, `refero-design` | design direction locked |
-| 6 | Build | ~1.25–1.6 h | + branch for web / dashboard / mobile (below) | happy path + `DEMO.md` |
-| 7 | Polish + freeze | 15 min | `impeccable`, `emil-design-eng`, `animate` | no more features |
-| 8 | Repo README | 15 min | badges, proof table, screenshots | judge-ready `README.md` |
-| 9 | Pitch story | 10 min | `founder-pitch-deck`, `pm-value-proposition` + `MARKET.md` | `PITCH.md` |
-| 10 | Slides | 20 min | `frontend-slides` | the deck |
-| 11 | Demo video | 25 min | Recordly + storyboard | `DEMO_VIDEO.md` + MP4 |
-| 12 | Rehearsal | 15 min | `grill-me` | answers to "how do you make money / how big / how does it scale" and more |
+| 2 | Market check | 15 / 5 min | `pm-ideal-customer-profile`, `pm-beachhead-segment`, `founder-competitor-matrix`, `pm-market-sizing` | ICP, competitors, TAM/SAM/SOM → **you decide: go / pivot / kill** |
+| 3 | MVP scope | 15 min | `founder-mvp-scope`, `pm-prioritize-features` | `MVP.md`: 3–4 features for that ICP, one flow |
+| 4 | Business model | 15 / 5 min | `founder-pricing-strategy`, `pm-monetization-strategy`, `pm-lean-canvas`, `pm-growth-loops`, `founder-go-to-market` | pricing from the MVP's features, lean canvas, scalability |
+| 5 | Brand | 20 min | `pm-product-name`, `pm-positioning-ideas`, `pm-value-prop-statements`, `product-marketing`, `logo-design` | `BRAND.md` (name, positioning, tagline, voice) + logo + `DESIGN.md` |
+| 6 | UI direction | 10 min | `frontend-design`, `design-taste-frontend` / `hallmark`, `ui-ux-pro-max`, `refero-design` | design direction locked |
+| 7 | Build | ~1.25–1.6 h | + branch for web / dashboard / mobile (below) | happy path + `DEMO.md` |
+| 8 | Polish + freeze | 15 min | `impeccable`, `emil-design-eng`, `animate` | no more features |
+| 9 | Repo README | 15 min | badges, proof table, screenshots | judge-ready `README.md` |
+| 10 | Pitch story | 10 min | `founder-pitch-deck`, `pm-value-proposition` + `MARKET.md` | `PITCH.md` |
+| 11 | Slides | 20 min | `frontend-slides` | the deck |
+| 12 | Demo video | 25 min | Recordly + storyboard | `DEMO_VIDEO.md` + MP4 |
+| 13 | Rehearsal | 15 min | `grill-me` | answers to "how do you make money / how big / how does it scale" and more |
 
-<sub>*for a ~4.5 h event; the agent scales the timeboxes to yours. Phase 3 runs **full** when judges score business, market or scalability (or the criteria are unknown) and **lite** when judging is product-only — decided by the rules, never by the agent.</sub>
+<sub>*for a ~4.5 h event; the agent scales the timeboxes to yours. Market check and business model run **full** when judges score business, market or scalability (or the criteria are unknown) and **lite** when judging is product-only — decided by the rules, never by the agent. The market check comes **before** the MVP so a weak market kills or pivots the idea before you scope it; pricing comes **after**, because tiers need the feature set.</sub>
 
 ### UI branches
 
@@ -85,8 +86,8 @@ Phase 0 asks for the event length and team size and picks a profile (you confirm
 
 | | 2 h | 4.5 h | 8 h | 24 h | 48 h |
 |---|:-:|:-:|:-:|:-:|:-:|
-| Build time (solo) | 45 min | 1 h 15 | 2 h 40 | 9 h in 3 h blocks | 20 h in 3 h blocks |
-| Market & business | lite | full or lite* | full | full | full |
+| Build time (solo) | 40 min | 1 h 15 | 2 h 40 | 9 h in 3 h blocks | 20 h in 3 h blocks |
+| Market check + business model | lite | full or lite* | full | full | full |
 | User interviews | — | — | — | 3–5 people | 3–5 people |
 | Deck + video | one of them | both | both | both | both |
 | Sleep, meals, buffer | — | — | — | 5.5 h | 12.5 h |
@@ -105,14 +106,14 @@ minimal CI, one worktree per agent, small reviewed PRs verified on the demo path
 instant revert when `main` breaks, and `demo-ok` / `demo-final` tags to fall back
 to (skills from [obra/superpowers](https://github.com/obra/superpowers)).
 
-Tracks run in parallel after the MVP scope with four sync points (after scope,
-mid-build, feature freeze, rehearsal), so a team of two at 4.5 h gets ~2.5 h of
+Phases 0–3 are done together; after that tracks run in parallel with four sync points (after scope,
+mid-build, feature freeze, rehearsal), so a team of two at 4.5 h gets ~2 h 15 of
 build instead of 1 h 15. Each teammate's agent works only its own phases and reads
 the others' files instead of regenerating them.
 
 ## 🎬 Demo video
 
-Phase 11 writes a storyboard before anything is recorded, then walks you through
+Phase 12 writes a storyboard before anything is recorded, then walks you through
 Recordly:
 
 | Time | Beat | Show |
