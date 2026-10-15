@@ -48,7 +48,8 @@ three.
   demo video recorded and edited in [Recordly](https://github.com/webadderallorg/Recordly).
 - **46 best-in-class skills, one command — one per job.** Pulled straight from their authors
   (Anthropic, Expo, shadcn, Vercel, Emil Kowalski, Paul Bakaus, …) and linked into
-  Claude Code, Cursor and Codex.
+  Claude Code, Cursor and Codex. No two skills compete for the same task: fewer,
+  sharper skill descriptions mean the agent picks the right one.
 
 ## 🗺️ The day, phase by phase
 
@@ -141,7 +142,7 @@ Restart your agent and say **"hackathon"** (or `/hackathon`).
 
 | Option | |
 |---|---|
-| `--agents claude,cursor` | choose where to link: `claude` (`~/.claude/skills`, also read by Cursor), `agents` (`~/.agents/skills`: Codex, Cursor and other Agent Skills tools), `codex`, `cursor` |
+| `--agents claude,agents` | where to link (default shown): `claude` → `~/.claude/skills` (Claude Code; Cursor reads it too), `agents` → `~/.agents/skills` (Codex, Cursor and other Agent Skills tools), `cursor` → `~/.cursor/skills`, `codex` → `~/.codex/skills` (old Codex only — current Codex reads `~/.agents/skills` and would list each skill twice) |
 | `--dry-run` | print the plan, change nothing |
 | `--uninstall` | remove everything this installer created |
 

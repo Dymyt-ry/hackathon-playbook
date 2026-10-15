@@ -19,7 +19,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 STORE="${HACKATHON_PLAYBOOK_HOME:-$HOME/.local/share/hackathon-playbook}/skills"
-AGENTS="claude,agents,codex"
+AGENTS="claude,agents"
 DRY_RUN=0
 UNINSTALL=0
 
@@ -27,10 +27,11 @@ usage() {
   sed -n '2,17p' "$0" | sed 's/^# \{0,1\}//'
   cat <<'EOF'
 Options:
-  --agents LIST   comma-separated: claude, agents, codex, cursor (default: claude,agents,codex)
+  --agents LIST   comma-separated: claude, agents, codex, cursor (default: claude,agents)
                   claude -> ~/.claude/skills   (Claude Code; Cursor reads it too)
                   agents -> ~/.agents/skills   (Codex, Cursor and other Agent Skills tools)
-                  codex  -> ~/.codex/skills    (older Codex versions)
+                  codex  -> ~/.codex/skills    (only for old Codex versions; current Codex reads
+                                                 ~/.agents/skills and would list a skill twice)
                   cursor -> ~/.cursor/skills
   --store DIR     where the skill files live (default: ~/.local/share/hackathon-playbook/skills)
   --dry-run       print the plan, change nothing
