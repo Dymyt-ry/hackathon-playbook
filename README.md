@@ -7,7 +7,7 @@
 [![CI](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/Dymyt-ry/hackathon-playbook/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-8b5cf6.svg)](https://agentskills.io)
-[![Skills](https://img.shields.io/badge/skills_routed-46-0ea5e9.svg)](THIRD_PARTY.md)
+[![Skills](https://img.shields.io/badge/skills_routed-41-0ea5e9.svg)](THIRD_PARTY.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-f97316.svg)](#contributing)
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-supported-D97757?logo=anthropic&logoColor=white)](https://claude.com/claude-code)
@@ -46,10 +46,10 @@ three.
   can verify in two minutes.
 - **Pitch deck *and* demo video.** An HTML deck, plus a storyboarded 60–90 s
   demo video recorded and edited in [Recordly](https://github.com/webadderallorg/Recordly).
-- **46 best-in-class skills, one command — one per job.** Pulled straight from their authors
-  (Anthropic, Expo, shadcn, Vercel, Emil Kowalski, Paul Bakaus, …) and linked into
-  Claude Code, Cursor and Codex. No two skills compete for the same task: fewer,
-  sharper skill descriptions mean the agent picks the right one.
+- **41 best-in-class skills, one command.** Pulled straight from their authors
+  (Expo, shadcn, Vercel, Paul Bakaus, Emil Kowalski, …) and linked into
+  Claude Code, Cursor and Codex. Where two skills share a phase, the playbook
+  names which one owns the decision and what the other adds, so they never contradict each other.
 
 ## 🗺️ The day, phase by phase
 
@@ -60,10 +60,10 @@ three.
 | 2 | Market check | 15 / 5 min | `pm-ideal-customer-profile`, `pm-beachhead-segment`, `founder-competitor-matrix`, `pm-market-sizing` | ICP, competitors, TAM/SAM/SOM → **you decide: go / pivot / kill** |
 | 3 | MVP scope | 15 min | `founder-mvp-scope` | `MVP.md`: 3–4 features for that ICP, one flow |
 | 4 | Business model | 15 / 5 min | `founder-pricing-strategy`, `pm-lean-canvas`, `pm-growth-loops`, `founder-go-to-market` | pricing from the MVP's features, lean canvas, scalability |
-| 5 | Brand | 20 min | `pm-product-name`, `pm-positioning-ideas`, `pm-value-proposition`, `product-marketing`, `logo-design` | `BRAND.md` (name, positioning, tagline, voice) + logo + `DESIGN.md` |
-| 6 | UI direction | 10 min | `frontend-design`, `design-taste-frontend`, `ui-ux-pro-max`, `refero-design` | design direction locked |
+| 5 | Brand | 20 min | `pm-product-name`, `pm-positioning-ideas`, `pm-value-proposition`, `logo-design` | `BRAND.md` (name, positioning, tagline, voice) + logo + `DESIGN.md` |
+| 6 | UI direction | 10 min | `impeccable` (owns the direction), `ui-ux-pro-max` (palette, font and chart lookups) | design direction locked |
 | 7 | Build | ~1.25–1.6 h | + branch for web / dashboard / mobile (below) | happy path + `DEMO.md` |
-| 8 | Polish + freeze | 15 min | `impeccable`, `emil-design-eng`, `animate` | no more features |
+| 8 | Polish + freeze | 15 min | `impeccable` (polish, audit, focal motion), `animate` (routine UI motion) | no more features |
 | 9 | Repo README | 15 min | badges, proof table, screenshots | judge-ready `README.md` |
 | 10 | Pitch story | 10 min | `founder-pitch-deck` + `BRAND.md` + `MARKET.md` | `PITCH.md` |
 | 11 | Slides | 20 min | `frontend-slides` | the deck |
@@ -76,8 +76,8 @@ three.
 
 | Building a… | Skill chain |
 |---|---|
-| 🌐 **Web app / landing page** | `frontend-design` → `design-taste-frontend` → `copywriting` → `impeccable` |
-| 📊 **Dashboard** | `shadcn` + `ui-ux-pro-max` + `frontend-design` → `impeccable` — one hero metric, 4–6 KPI tiles, realistic seeded data |
+| 🌐 **Web app / landing page** | `impeccable` → `copywriting` → `impeccable` polish |
+| 📊 **Dashboard** | `shadcn` + `impeccable` + `ui-ux-pro-max` (chart types) — one hero metric, 4–6 KPI tiles, realistic seeded data |
 | 📱 **Expo / React Native app** | `expo-overview` → `expo-router` → `expo-design-system` + `expo-native-ui` / `expo-ui` → `expo-animation`, `vercel-react-native-skills`, `apple-design` |
 | 📲 **Mobile web / PWA** | web chain + `mobile-native` + `apple-design` |
 
@@ -162,15 +162,12 @@ any skill.
 ## 🙏 Credits
 
 This playbook is glue; the craft lives in the skills it routes to. Huge thanks to
-[Anthropic](https://github.com/anthropics/skills),
 [Paul Bakaus](https://github.com/pbakaus/impeccable),
 [Emil Kowalski](https://github.com/emilkowalski/skills),
+[Next Level Builder](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill),
 [Expo](https://github.com/expo/skills),
 [shadcn](https://github.com/shadcn-ui/ui),
 [Vercel](https://github.com/vercel-labs/agent-skills),
-[Leon Lin](https://github.com/Leonxlnx/taste-skill),
-[Next Level Builder](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill),
-[Refero](https://github.com/referodesign/refero_skill),
 [Emotix](https://github.com/emotixco/claude-skills-founder),
 [Pawel Huryn](https://github.com/phuryn/pm-skills),
 [Matt Van Horn](https://github.com/mvanhorn/last30days-skill),

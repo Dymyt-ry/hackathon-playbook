@@ -95,12 +95,8 @@ phuryn/pm-skills|pm-marketing-growth/skills/product-name|pm-product-name|pm
 phuryn/pm-skills|pm-marketing-growth/skills/positioning-ideas|pm-positioning-ideas|pm
 mvanhorn/last30days-skill|skills/last30days|last30days|none
 kaankiziltug/logo-design-skill|skills/logo-design|logo-design|none
-anthropics/skills|skills/frontend-design|frontend-design|none
-Leonxlnx/taste-skill|skills/taste-skill|design-taste-frontend|none
 nextlevelbuilder/ui-ux-pro-max-skill|.claude/skills/ui-ux-pro-max|ui-ux-pro-max|none
-referodesign/refero_skill|skills/refero-design|refero-design|none
 pbakaus/impeccable|.agents/skills/impeccable|impeccable|none
-emilkowalski/skills|skills/emil-design-eng|emil-design-eng|none
 emilkowalski/skills|skills/animate|animate|none
 emilkowalski/skills|skills/apple-design|apple-design|none
 emilkowalski/skills|skills/mobile-native|mobile-native|none
@@ -115,7 +111,6 @@ vercel-labs/agent-skills|skills/react-native-skills|vercel-react-native-skills|n
 zarazhangrui/frontend-slides|plugins/frontend-slides/skills/frontend-slides|frontend-slides|none
 mattpocock/skills|skills/productivity/grill-me|grill-me|none
 coreyhaines31/marketingskills|skills/social|social-content|none
-coreyhaines31/marketingskills|skills/product-marketing|product-marketing|none
 coreyhaines31/marketingskills|skills/copywriting|copywriting|none
 obra/superpowers|skills/using-git-worktrees|using-git-worktrees|none
 obra/superpowers|skills/verification-before-completion|verification-before-completion|none

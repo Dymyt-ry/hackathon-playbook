@@ -10,18 +10,15 @@ and stays under its own license. Nothing below is redistributed from here.
 | `pm-brainstorm-ideas-new`, `pm-value-proposition`, `pm-lean-canvas`, `pm-ideal-customer-profile`, `pm-beachhead-segment`, `pm-growth-loops`, `pm-market-sizing`, `pm-product-name`, `pm-positioning-ideas` | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | MIT |
 | `last30days` | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | MIT |
 | `logo-design` | [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) | MIT (its reference library contains third-party logos, which are trademarks of their owners — see the upstream TRADEMARKS.md) |
-| `frontend-design` | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/frontend-design) | Apache-2.0 (LICENSE.txt in the skill folder) |
-| `design-taste-frontend` | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | MIT |
 | `ui-ux-pro-max` | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | MIT |
-| `refero-design` | [referodesign/refero_skill](https://github.com/referodesign/refero_skill) | MIT |
 | `impeccable` | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache-2.0 |
-| `emil-design-eng`, `animate`, `apple-design`, `mobile-native` | [emilkowalski/skills](https://github.com/emilkowalski/skills) | MIT |
+| `animate`, `apple-design`, `mobile-native` | [emilkowalski/skills](https://github.com/emilkowalski/skills) | MIT |
 | `shadcn` | [shadcn-ui/ui](https://github.com/shadcn-ui/ui/tree/main/skills/shadcn) | MIT |
 | `expo-overview`, `expo-router`, `expo-design-system`, `expo-native-ui`, `expo-ui`, `expo-animation` | [expo/skills](https://github.com/expo/skills) | MIT |
 | `vercel-react-native-skills` | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | MIT (declared in the skill's frontmatter) |
 | `frontend-slides` | [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides) | MIT |
 | `grill-me` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT |
-| `social-content` (upstream name `social`), `product-marketing`, `copywriting` | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT |
+| `social-content` (upstream name `social`), `copywriting` | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT |
 | `infographic` | [claude-office-skills/skills](https://github.com/claude-office-skills/skills) | MIT |
 | `using-git-worktrees`, `verification-before-completion`, `requesting-code-review`, `receiving-code-review`, `finishing-a-development-branch` | [obra/superpowers](https://github.com/obra/superpowers) | MIT |
 
